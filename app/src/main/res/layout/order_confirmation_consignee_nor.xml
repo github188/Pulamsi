@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/order_confirmation_consignee_layout_nor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:textColor="@color/app_btn_main_color"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:text="添加收货地址"/>
+
+    <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/order_confirmation_consignee_more_nor"
+            android:background="@drawable/ic_list_more"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"/>
+
+
+</RelativeLayout>

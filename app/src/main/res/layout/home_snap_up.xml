@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:paddingTop="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/snap_up_title_vertical_bar"
+            >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="限时"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="抢购"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp"
+            />
+
+        <com.pulamsi.views.SnapUpCountDownTimerView.SnapUpCountDownTimerView
+            android:id="@+id/sudtv_countDownTimerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:viewSize="10"
+            >
+        </com.pulamsi.views.SnapUpCountDownTimerView.SnapUpCountDownTimerView>
+
+
+        <TextView
+            android:id="@+id/tv_snapUp_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="查看更多"
+            android:textColor="@color/app_font_color_99"
+            android:drawableRight="@drawable/ic_go_to_right"
+            android:paddingRight="8dp"
+            android:drawablePadding="-5dp"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+
+
+    <com.pulamsi.views.horizontalRecycleViewLoadMore.HorizontaloadMoreRecycleView
+        android:id="@+id/hmr_horizontaloadMoreRecycleView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="170dp">
+
+    </com.pulamsi.views.horizontalRecycleViewLoadMore.HorizontaloadMoreRecycleView>
+
+
+
+</LinearLayout>

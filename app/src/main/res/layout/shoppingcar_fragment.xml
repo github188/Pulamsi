@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <!-- 统一的页头 -->
+    <com.pulamsi.views.header.TitleHeaderBar
+        android:id="@+id/shoppingcar_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"/>
+
+    <com.pulamsi.views.PtrStylelFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/shoppingcar_ptrmaterframe"
+        android:layout_below="@+id/shoppingcar_header"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="51dp"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.taobao.uikit.feature.view.TRecyclerView
+            android:id="@+id/shoppingcar_trecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        <com.pulamsi.views.BlankLayout
+            android:id="@+id/blank_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    </com.pulamsi.views.PtrStylelFrameLayout>
+
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/shoppingcar_bottom_layout_line"
+        android:layout_height="1px"
+        android:layout_above="@+id/shoppingcar_bottom_layout"
+        android:background="@color/app_divider_line_bg_e2"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/shoppingcar_bottom_layout"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/shoppingcar_all_check"
+            android:button="@drawable/checkbox_circle_selector"
+            android:background="@color/white"
+            android:text="全选"
+            android:textColor="@color/app_btn_main_color"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/shoppingcar_all_check"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/shoppingcar_settlement_btn"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/app_main_right_margin"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="总计:"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/shoppingcar_total_price"
+                    android:text="￥0.00"
+                    android:gravity="center"
+                    android:textColor="@color/app_btn_main_color"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:id="@+id/shoppingcar_settlement_btn"
+            android:text="结算(10)"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_btn_solid_main_color"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

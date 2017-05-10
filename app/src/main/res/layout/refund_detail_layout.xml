@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/background"
+                android:layout_height="match_parent">
+
+
+    <com.pulamsi.views.PtrStylelFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_refund_style_ptr_frame"
+        android:layout_above="@+id/order_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/app_divider_bg"
+        app:MaterialKeep="true"
+        >
+
+
+    <ScrollView
+        android:id="@+id/rotate_header_scroll_view"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <!-- 订单状态  -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/order_detail_orderStatuslayout"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+        <!-- divider -->
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/app_divider_line_bg_e2"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/app_main_left_margin"
+            android:paddingRight="@dimen/app_main_right_margin"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="退款状态"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="退款成功"
+                android:id="@+id/refund_detail_refundStatus"
+                android:textSize="18dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <!-- divider -->
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/app_divider_line_bg_e2"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_main_left_margin"
+            android:paddingRight="@dimen/app_main_right_margin"
+            android:paddingTop="8dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/order_detail_orderid"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/order_detail_orderid"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/order_detail_ordertime"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/refund_detail_refundTime"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- 收货地址  -->
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:id="@+id/order_detail_address"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/order_detail_orderStatuslayout"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+        <TextView
+            android:id="@+id/order_detail_receiver_name"
+            android:paddingLeft="@dimen/app_main_left_margin"
+            android:textColor="@color/app_font_color_56"
+            android:textSize="18dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:text="退款商品:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+    <com.taobao.uikit.feature.view.TRecyclerView
+        android:id="@+id/order_detail_trecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:background="@color/white"
+        ></com.taobao.uikit.feature.view.TRecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_main_left_margin"
+        android:paddingRight="@dimen/app_main_right_margin"
+        android:layout_below="@+id/order_detail_trecyclerview"
+        android:layout_height="wrap_content">
+        <!-- 支付方式  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="@string/order_detail_orderpaytype"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:id="@+id/order_detail_payType"
+                android:text="在线支付"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+        <!-- 商品总金额  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="@string/order_detail_ordertotalprice"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:id="@+id/order_detail_ordertotalprice"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+        <!-- 商品总积分  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="@string/order_detail_expendTotalIntegral"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:id="@+id/order_detail_expendTotalIntegral"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+        <!-- 运费  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="@string/order_detail_orderdeliverfee"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:id="@+id/order_detail_orderdeliverfee"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+        <!-- 运费  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="退款金额:"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:id="@+id/order_detail_refundAmount"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+        <!-- 使用优惠卷  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="@string/order_detail_ordercoupon"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/order_detail_ordercoupon"
+                android:textSize="16dp"
+                android:text="-￥58.00"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    </com.pulamsi.views.PtrStylelFrameLayout>
+
+
+
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/app_divider_line_bg_e2"
+        android:layout_above="@+id/order_detail_bottom"
+        android:layout_height="@dimen/app_line_bg"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/order_detail_bottom"
+        android:gravity="right"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_btn_my_order_list_item_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/selector_btn_stroke_ff_1px_solid_red_corner_1dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="14dp"
+            android:textColor="@color/text_ff_white_color"
+            android:text="退款" />
+    </LinearLayout>
+
+
+    <!--LoadViewHelper的状态布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_layout"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>

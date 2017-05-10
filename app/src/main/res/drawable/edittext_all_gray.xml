@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/app_background_eb" />
+
+    <span style="font-size: 1em; line-height: 1.5;" >
+
+        <!-- </span><span style="font-size: 1em; line-height: 1.5;"> 因为的登录背景颜色为白色，所以设置成了白色，如果如其他颜色，根据自己的要求来设定 -->
+    </span>
+
+    <corners android:radius="3dip" />
+
+    <stroke
+        android:width="0dip" >
+        <span style="font-size: 1em; line-height: 1.5;" >
+ <!-- </span><span style="font-size: 1em; line-height: 1.5;">边框宽度为0 -->
+        </span>
+    </stroke>
+
+</shape>

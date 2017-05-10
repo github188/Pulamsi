@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="1dp"/>
+    <com.daimajia.swipe.SwipeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bankinfo_item_swipeLayout"
+        android:orientation="horizontal"
+        android:layout_height="58dp">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="解除绑定"
+                android:id="@+id/bankinfo_item_del"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="58dp">
+    <ImageView
+        android:layout_width="120dp"
+        android:src="@drawable/img_place_hold_bg"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/bankinfo_item_bankicon"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/bankinfo_item_bankhideid"
+        android:text="1247773627****636"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:id="@+id/bankinfo_item_bankaccountname"
+        android:text="蓝强"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

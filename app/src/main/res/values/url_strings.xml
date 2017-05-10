@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 服务器地址 -->
+    <!-- <string name="serverbaseurl">http://192.168.1.222:8886/pulamsi/</string> -->
+    <!-- <string name="serverbaseurl">http://61.235.126.22:8889/pulamsi/</string> -->
+    <!--<string name="serverbaseurl">http://192.168.1.218:8080/pulamsi/</string>-->
+    <!--测试服务器-->
+<!--、    <string name="serverbaseurl">http://183.63.52.27/pulamsi/</string>-->
+<!--、    <string name="serverbaseurl">http://demo.pulamsi.com/pulamsi/</string>-->
+    <!-- 张俊明 -->
+    <!--<string name="serverbaseurl">http://192.168.1.223:8080/pulamsi/</string>-->
+    <!--<string name="serverbaseurl">http://192.168.1.218:8080/pulamsi/</string>-->
+    <!--黄家俊-->
+    <!--<string name="serverbaseurl">http://192.168.1.24:8080/pulamsi/</string>-->
+    <!--麦进页-->
+    <!--<string name="serverbaseurl">http://192.168.1.222:8886/pulamsi/</string>-->
+    <!-- <string name="serverbaseurl">http://121.201.96.9/</string> -->
+    <string name="serverbaseurl">http://www.pulamsi.com/</string>
+    <!-- 判断用户名是否已注册 -->
+    <string name="validateMobileurl">regist/validateMobile.html?mobile=</string>
+    <!-- 请求短信验证码url -->
+    <string name="requestsmsurl">android/regist/mobileSms.html</string>
+    <!-- 发送注册参数url -->
+    <string name="requestsaveurl">android/regist/save.html</string>
+    <!-- 登录url -->
+    <string name="loginurl">mobileLogin/submit.html</string>
+    <!-- 热销商品 -->
+    <string name="hotsellproducturl">android/index/getHotSellProductList.html</string>
+    <!-- 获取淘宝商家 -->
+    <!-- <string name="channelMgrImplurl">android/channelMobile/getPageChannel.html</string> -->
+    <string name="channelMgrImplurl">android/channelMobile/queryPageChannel.html</string>
+    <!--限时抢购-->
+    <string name="snapUpHomeList">android/panicBuy/list.html</string>
+    <!--抢购商品详情-->
+    <string name="snap_up_product_details">android/panicBuy/panicBuyInfo.html</string>
+    <!--最美天使-->
+    <string name="angleHomeList">/android/seller/getSeller.html</string>
+    <!--最美天使搜索界面，也是更多界面的接口-->
+    <string name="angelSearchList">android/seller/searchSeller.html</string>
+    <!--最美天详情-->
+    <string name="angelDetails">/android/seller/showSellerInfo.html</string>
+    <!--最美天商品列表-->
+    <string name="angelProduct">/android/sellerProduct/showSellerProductInfo.html</string>
+    <!--最美天使店铺评价-->
+    <string name="angelEvaluate">/android/seller/searchSellerEvaluate.html</string>
+    <!--最美天使商品详情-->
+    <string name="angelGoodsDetails">android/sellerProduct/showDetails.html</string>
+    <!--最美天使商品评价-->
+    <string name="angelGoodsEvaluate">android/sellerProduct/getSellerProductEstimateList.html</string>
+    <!--最美天使商品评价数量-->
+    <string name="angelGoodsEvaluatenumber">android/sellerProduct/getSellerProductEstimateCount.html</string>
+    <!--最美天使加入购物车-->
+    <string name="addShoppingCartItem">android/cart/addCartItem.html</string>
+    <!-- 获取库别 -->
+    <string name="StoreroomListurl">android/mobileStock/getStoreroomList.html</string>
+    <!-- 上传单个商品条码获取商品信息 -->
+    <string name="ProductById">android/mobileStock/getProductById.html</string>
+    <!-- 获取单号 -->
+    <string name="add">android/mobileStock/add.html</string>
+    <!-- 入库出库退货保存接口 -->
+    <string name="storesaveurl">android/mobileStock/save.html</string>
+    <!-- 获取售货机列表 -->
+    <string name="getVenderListurl">android/VenderStock/getVenderList.html</string>
+    <!-- 获取货道列表 -->
+    <string name="getPortListurl">android/VenderStock/getPortList.html</string>
+    <!-- 取货列表 -->
+    <string name="getclaimGoodsListurl">android/mobilePickup/getVenderList.html</string>
+    <!-- 缺货列表 -->
+    <string name="quick_lookurl">android/VenderStock/android_quick_look.html</string>
+    <!-- 缺货货道列表 -->
+    <string name="getQuickLookByVenderId">android/VenderStock/getQuickLookByVenderId.html</string>
+    <!-- 故障列表 -->
+    <string name="quick_err_lookurl">android/VenderStock/quick_err_look.html</string>
+    <!-- 故障货道列表 -->
+    <string name="getQuickErrLookByVenderId">android/VenderStock/getQuickErrLookByVenderId.html</string>
+    <!-- 购物车列表 -->
+    <string name="showcarturl">android/cart/showCart.html</string>
+    <!-- 购物车货物更新 -->
+    <string name="updateCartItemCount">android/cart/updateCartItemCount.html</string>
+    <!-- 添加货物到购物车 -->
+    <string name="addCartItem">android/cart/addCartItem.html</string>
+    <!-- 商品详情 -->
+    <string name="showDetails">android/product/showDetails.html</string>
+    <!-- 收货地址列表 -->
+    <string name="showAddress">android/address/showAddress.html</string>
+    <!-- 添加收货地址 -->
+    <string name="addAddress">android/address/addAddress.html</string>
+    <!-- 删除收货地址?addressId -->
+    <string name="delAddress">android/address/delAddress.html</string>
+    <!-- 获取省下拉列表 -->
+    <string name="getProvinces">android/common/getProvinces.html</string>
+    <!-- 获取市下拉列表 -->
+    <string name="getCitysById">android/common/getCitysById.html</string>
+    <!-- 获得区下拉列表 -->
+    <string name="getDistrictById">android/common/getDistrictById.html</string>
+    <!-- 获取售货机交易信息 -->
+    <string name="Tradelist">android/mobileTrade/list.html</string>
+    <!-- 提交订单 -->
+    <!--<string name="saveOrderurl">android/cart/saveOrder.html</string>-->
+    <string name="saveOrderurl">android/cart/saveOrder2.html</string>
+    <!-- 获取订单列表 -->
+    <string name="showOrderList">android/order/showOrderList.html</string>
+    <!-- 获取支付方式列表 -->
+    <string name="getPayTypeAll">android/cart/getPayTypeAll.html</string>
+    <!-- 获取配送方式列表 -->
+    <string name="getDeliveTypeAll">android/cart/getDeliveTypeAll.html</string>
+    <!-- 获取角色权限?mid=eb9d2634-284e-4b76-8af0-3d3398e2dbf4 -->
+    <string name="getRoleResoure">android/index/getRoleResoure.html</string>
+    <!-- 获取取货码?orderId -->
+    <string name="getPickupList">android/order/getPickupList.html</string>
+    <!-- 确认收货?orderId -->
+    <string name="updataShippingState">android/order/updataShippingState.html</string>
+    <!-- 删除订单?orderId -->
+    <string name="deleteOrder">android/order/deleteOrder.html</string>
+    <!-- 取消订单?orderId -->
+    <string name="cleanOrder">android/order/cleanOrder.html</string>
+    <!-- 验证是否存在用户名 ?username-->
+    <string name="isExistUsername">android/regist/isExistUsername.html</string>
+    <!-- 重设密码?username，，password -->
+    <string name="resetPwd">android/regist/resetPwd.html</string>
+    <!-- 注册协议 -->
+    <string name="registhelp">help.html?id=20</string>
+    <!-- 图片轮换接口begin=1&end=10，begin和end必须是上传后台数据的编号区间 -->
+    <string name="indexSource">android/index/indexSource.html</string>
+    <!-- 正品渠道查询 ?searchName=合同编号/手机号/QQ-->
+    <string name="searchValue">android/channelMobile/searchValue.html?searchName=</string>
+    <!-- 物流信息查询?orderSn=-->
+    <string name="searchkuaiDiInfos">android/order/searchkuaiDiInfos.html?orderSn=</string>
+    <!-- 更新售货机微信二维码?machineid=-->
+    <string name="updateWeixin">android/VenderStock/updateWeixin.html?machineid=</string>
+    <!-- 更新售货机支付宝二维码?machineid=-->
+    <string name="updateAlipay">android/VenderStock/updateAlipay.html?machineid=</string>
+    <!-- 获取用户信息?mid=-->
+    <string name="showMember">android/member/showMember.html?mid=</string>
+    <!-- 更新用户信息-->
+    <string name="updateUserInfo">android/account/updateMember.html</string>
+    <!--根据订单ID查对应订单-->
+    <string name="queryOrder">android/order/showOrderById.html</string>
+    <!--退款管理列表-->
+    <string name="refundManagementList">android/refund/showRefund.html</string>
+    <!--微信退款-->
+    <string name="weChatRefund">android/refund/wxpayapi.html</string>
+    <!-- 防伪验证 -->
+    <string name="security_code_validation">android/codeSecurity/scanCode.html</string>
+    <!-- 暗码验证 -->
+    <string name="security_secret_validation">android/codeSecurity/scanCodePwd.html</string>
+    <!-- 修改头像 -->
+    <string name="modify_avatar">android/member/headPro.html</string>
+    <!--
+    首页搜索?productName=面膜&pageNumber=1&pageSize=5&searchProperty=price&searchValue=asc
+    productName 商品名称
+    pageNumber 当前页
+    pageSize 每页大小
+    searchProperty 需要排序的字段
+    searchValue 升降序
+    -->
+    <string name="productSearch">android/product/productSearch.html</string>
+    <!-- 添加售货机-->
+    <string name="addvender">android/VenderStock/save.html</string>
+    <!-- 检查售货机是否存在-->
+    <string name="vendercheckId">android/VenderStock/checkId.html?venderId=</string>
+    <!-- 删除售货机-->
+    <string name="venderdelete">android/VenderStock/delete.html</string>
+    <!-- 获取用户钱包
+        http://61.235.126.22:8887/pulamsi/android/account/showAccount.html?mid=7ac69d59-3e16-4141-bbd7-b71aa64eb2f3
+    -->
+    <string name="showAccount">android/account/showAccount.html</string>
+    <!-- 钱包添加银行卡
+        http://61.235.126.22:8887/pulamsi/android/account/saveBankInfo.html
+        ?mid=7ac69d59-3e16-4141-bbd7-b71aa64eb2f3&bankName=中国工商银行&bankAccountName=蓝强&bankAccountID=4403564164646464
+    -->
+    <string name="saveBankInfo">android/account/saveBankInfo.html</string>
+    <!-- 钱包删除银行卡
+        http://61.235.126.22:8887/pulamsi/android/account/delBankInfo.html
+        ?mid=7ac69d59-3e16-4141-bbd7-b71aa64eb2f3&banckInfoId=8957b2de-09c8-4f75-9fe0-65fc1ffc3ac4
+    -->
+    <string name="delBankInfo">android/account/delBankInfo.html</string>
+    <!-- 钱包提现
+        http://61.235.126.22:8887/pulamsi/android/account/bankExtract.html
+        ?mid=7ac69d59-3e16-4141-bbd7-b71aa64eb2f3&banckInfoId=9c4a4de5-51ba-4cd4-a9ae-46866fc78668&cashMoney=1
+    -->
+    <string name="bankExtract">android/account/bankExtract.html</string>
+    <!-- 钱包交易明细
+        http://61.235.126.22:8887/pulamsi/android/account/searchAccountTran.html
+        ?mid=7ac69d59-3e16-4141-bbd7-b71aa64eb2f3&page=1&pageSize=10
+        -->
+    <string name="searchAccountTran">android/account/searchAccountTran.html</string>
+    <!-- 钱包获取银行卡列表
+        http://61.235.126.22:8887/pulamsi/android/account/bankInfoList.html
+        ?mid=7ac69d59-3e16-4141-bbd7-b71aa64eb2f3
+     -->
+    <string name="bankInfoList">android/account/bankInfoList.html</string>
+    <!-- 售货机打折获取货道商品
+    http://61.235.126.22:8887/pulamsi/android/VenderStock/getGoodsList.html
+    -->
+    <string name="getGoodsList">android/VenderStock/getGoodsList.html</string>
+    <!-- 售货机打折接口
+        http://61.235.126.22:8887/pulamsi/android/VenderStock/setRebate.html
+        ?rate=30&goodsIds=1,2&venderIds=20047,20048
+    -->
+    <string name="setRebate">android/VenderStock/setRebate.html</string>
+    <!-- 收货地址设置默认
+         http://127.0.0.1:8080/pulamsi/android/address/updateIsDefaul.html
+         ?oldId=2002afc0-e3c8-4e14-b8ba-ee9fefc8884d&newId=13fea7c3-86af-46bb-a92a-1cb4041e3db8
+    -->
+    <string name="updateIsDefaul">android/address/updateIsDefaul.html</string>
+    <!-- 我的团队列表
+        http://61.235.126.22:8887/pulamsi/phone/shop/member/contract/memberList.html
+        ?mid=7ec6a646-7f95-4055-a195-ab75f4b30fc9
+    -->
+    <string name="memberList">phone/shop/member/contract/memberList.html</string>
+    <!-- 商品详情页图片详情
+     -->
+    <string name="showIntroduction">android/product/showIntroduction.html</string>
+    <!-- 商品详情页售后保障
+     -->
+    <string name="showHelp">android/product/showHelp.html</string>
+    <!-- 商品详情页商品参数
+     -->
+    <string name="showParameter">android/product/showParameter.html</string>
+
+    <!-- 商品分类
+     -->
+    <string name="showCategoryList">android/index/showCategoryList.html</string>
+
+    <!--返回各种评价总记录数
+    http://192.168.1.218:8080/pulamsi/android/product/getProductEstimateCount.html
+    ?productId=b1dbd4fd-b6c1-4c40-a305-654c474c9e7d
+    -->
+    <string name="getProductEstimateCount">android/product/getProductEstimateCount.html</string>
+    <!--返回单个评价或者全部评价
+    http://192.168.1.218:8080/pulamsi/android/product/getProductEstimateList.html
+    ?productId=b1dbd4fd-b6c1-4c40-a305-654c474c9e7d
+    &pageNumber=1&pageSize=2&productStars=4
+    productStars （0全部，1差评，3中评，5好评）
+    -->
+    <string name="getProductEstimateList">android/product/getProductEstimateList.html</string>
+    <!--查看商品评价-->
+    <string name="showProductEstimate">android/order/estimate.html</string>
+    <!--查看天使商品评价-->
+    <string name="showAngelProductEstimate">android/order/sellerEstimate.html</string>
+    <!-- 新增商品评论 -->
+    <!--<string name="addEstimate">android/order/addEstimate.html</string>旧接口-->
+    <string name="addEstimate">android/order/saveEstimate.html</string>
+    <!-- 新增天使商品评论 -->
+    <string name="addAngelProductEstimate">android/order/sellerEvaluateSave.html</string>
+    <!-- 新增天使商家评论 -->
+    <string name="addAngelEstimate">android/order/sellerSave.html</string>
+    <!-- 获取积分商城商品  -->
+    <string name="showIntegralShop">android/integral/showIntegralShop.html</string>
+    <!-- 勾选购物车商品上传状态给服务器 -->
+    <string name="selectItem">android/cart/selectItem.html</string>
+    <!-- 全选购物车商品上传状态给服务器 -->
+    <string name="selectAllItem">android/cart/selectAllItem.html</string>
+    <!-- 获取前端售货机列表，要传省市区id -->
+    <string name="getIndexVenderList">android/VenderStock/getIndexVenderList.html</string>
+    <!-- 获取用户积分明细 -->
+    <string name="queryByMemberIntegarlDetail">android/member/queryByMemberIntegarlDetail.html</string>
+    <!-- 获取订单数据 -->
+    <string name="toOrder">android/cart/toOrder.html</string>
+    <!-- 立即购买获取订单数据 -->
+    <string name="toOrderOnce">android/cart/toOrderOnce.html</string>
+    <!-- 限时抢购获取订单数据 -->
+    <string name="toOrderSnapUp">android/panicBuy/panicShoppingcart_once.html</string>
+    <!--订单角标数量-->
+    <string name="order_count">android/order/showOrderCount.html</string>
+    <!--修改密码发送验证码-->
+    <string name="change_password_send_verification_code">android/member/sendAlterSms.html</string>
+    <!--修改密码-->
+    <string name="change_password_submit">android/member/resetPwd.html</string>
+    <!--退款详情-->
+    <string name="refund_detail_info">android/order/torefundDetail.html</string>
+    <!--支付宝支付回调地址-->
+    <string name="alipay_notify">shop/alipay/notify_url.html</string>
+    <!--微信支付回调地址-->
+    <string name="wechat_notify">shop/wxpay/notify_url.html</string>
+
+</resources>

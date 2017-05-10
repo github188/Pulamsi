@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/pw_addresslist_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="46dp"
+        android:layout_gravity="center"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/app_pulamsi_main_color"
+        app:matProg_progressIndeterminate="true"/>
+
+    <com.taobao.uikit.feature.view.TRecyclerView
+        android:id="@+id/addresslist_trecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_marginBottom="46dp"
+        android:background="@color/background"
+        ></com.taobao.uikit.feature.view.TRecyclerView>
+
+    <TextView
+        android:id="@+id/addresslist_new_address_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@drawable/selector_btn_solid_main_color"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        android:text="@string/shipping_address_management_new_address_btn_str"/>
+    <com.pulamsi.views.BlankLayout
+        android:id="@+id/blank_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

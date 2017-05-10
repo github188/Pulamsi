@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/slotmachine_manage_deallist_top"
+        android:layout_height="30dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_deallist_id"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_deallist_roadid"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_deallist_name"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_deallist_price"/>
+    </LinearLayout>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/slotmachine_manage_deallist_pw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/slotmachine_manage_deallist_top"
+        android:layout_marginBottom="46dp"
+        android:layout_gravity="center"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/app_pulamsi_main_color"
+        app:matProg_progressIndeterminate="true"/>
+
+
+    <com.pulamsi.views.PtrStylelFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slotmachine_manage_deallist_ptrframe"
+        android:layout_below="@+id/slotmachine_manage_deallist_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/app_divider_bg">
+
+        <com.taobao.uikit.feature.view.TRecyclerView
+            android:id="@+id/slotmachine_manage_deallist_trecyclerview"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:background="@color/background"
+            android:layout_height="wrap_content">
+
+        </com.taobao.uikit.feature.view.TRecyclerView>
+    </com.pulamsi.views.PtrStylelFrameLayout>
+
+
+
+    <com.pulamsi.views.BlankLayout
+        android:id="@+id/blank_layout"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_above="@+id/slotmachine_manage_goodsroadlist_updatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

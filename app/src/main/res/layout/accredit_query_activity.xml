@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/channel_search_datascrollview"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <!--头像 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textviewshape_top" >
+
+                <TextView
+                    android:id="@+id/channel_search_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="头像"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/accreditquery_usericon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/channel_search_arrow" />
+
+                <ImageView
+                    android:id="@+id/channel_search_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_go_to_right" />
+            </RelativeLayout>
+            <!--姓名 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_username_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_username_text"
+                    />
+            </RelativeLayout>
+            <!--住址 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape_bottom" >
+
+                <TextView
+                    android:id="@+id/accreditquery_address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="住址:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_address_text"
+                    />
+            </RelativeLayout>
+
+            <!--qq -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape_top" >
+
+                <TextView
+                    android:id="@+id/accreditquery_qq_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="QQ:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_qq_text"
+                    />
+            </RelativeLayout>
+
+            <!--电话 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_mobile_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="电话:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_mobile_text"
+                    />
+            </RelativeLayout>
+            <!--手机 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_phone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="手机:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_phone_text"
+                    />
+            </RelativeLayout>
+            <!--微信 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_weixin_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="微信:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_weixin_text"
+                    />
+            </RelativeLayout>
+
+            <!--新浪微博 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_sinaweibo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="新浪微博:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_sinaweibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_sinaweibo_text"
+                    />
+            </RelativeLayout>
+            <!--客户编号 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_usersn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="客户编号:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_usersn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_usersn_text"
+                    />
+            </RelativeLayout>
+
+            <!--负责销售 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_principal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="负责销售:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_principal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_principal_text"
+                    />
+            </RelativeLayout>
+
+            <!--签订日期 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_signdate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="签订日期:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_signdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_signdate_text"
+                    />
+            </RelativeLayout>
+            <!--描述 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_describes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="描述:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_describes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_describes_text"
+                    />
+            </RelativeLayout>
+            <!--审核状态 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape_bottom" >
+
+                <TextView
+                    android:id="@+id/accreditquery_auditsta_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="审核状态:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_auditsta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_auditsta_text"
+                    />
+            </RelativeLayout>
+
+            <!--店铺名字 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape_top" >
+
+                <TextView
+                    android:id="@+id/accreditquery_dianname_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="店铺名字:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_dianname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_dianname_text"
+                    />
+            </RelativeLayout>
+
+            <!--店铺简述 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textviewshape" >
+
+                <TextView
+                    android:id="@+id/accreditquery_diannamedetail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="店铺简述:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_diannamedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_diannamedetail_text"
+                    />
+            </RelativeLayout>
+
+            <!--店铺地址 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/accreditquery_dianurl_relative"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/textviewshape_bottom" >
+
+                <TextView
+                    android:id="@+id/accreditquery_dianurl_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="店铺地址:"
+                    android:textColor="@color/app_font_color_56"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/accreditquery_dianurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/app_font_color_56"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accreditquery_dianurl_text" />
+
+                <ImageView
+                    android:id="@+id/accreditquery_dianurl_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_go_to_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.pulamsi.views.BlankLayout
+        android:id="@+id/blank_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

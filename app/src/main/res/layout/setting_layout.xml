@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/app_main_left_margin"
+        android:background="@color/app_divider_line_bg_e3"/>
+    <!-- 修改密码 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/setting_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/mine_info_change_password_48"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/ic_go_to_right"
+            android:gravity="center|left"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:text="@string/my_info_setting_security"
+            android:textColor="@color/app_font_color_56"
+            android:textSize="16dp"/>
+    </FrameLayout>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e3"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@color/app_divider_line_bg_e3"/>
+    <!-- 关于我们 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/setting_activity_about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/mine_info_about_48"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/ic_go_to_right"
+            android:gravity="center|left"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:text="@string/my_info_setting_about"
+            android:textColor="@color/app_font_color_56"
+            android:textSize="16dp"/>
+    </FrameLayout>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/background"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:layout_marginRight="@dimen/app_main_right_margin"
+        android:layout_marginTop="@dimen/app_main_left_margin"
+        android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+        >
+        <!-- 退出 -->
+        <TextView
+            android:id="@+id/tv_my_info_my_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:singleLine="true"
+            android:text="@string/my_info_my_quit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size"/>
+    </FrameLayout>
+
+</LinearLayout>

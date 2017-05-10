@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺评价"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tv_angel_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普兰氏"
+            android:gravity="right"
+            android:drawableRight="@drawable/ic_go_to_right"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_line_bg"
+        android:background="@color/app_divider_line_bg_cc"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_angel_evalaute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天使服务"
+            android:textSize="16sp"
+            android:id="@+id/textView"/>
+        <RatingBar
+            android:id="@+id/rat_angel_server"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            style="@style/roomRatingBar"
+            android:rating="5"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="47dp"
+            android:layout_marginEnd="47dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天使速度"
+            android:textSize="16sp"
+            />
+        <RatingBar
+            android:id="@+id/rat_angel_speed"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            style="@style/roomRatingBar"
+            android:rating="5"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="47dp"
+            android:layout_marginEnd="47dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天使售后"
+            android:textSize="16sp"
+            />
+        <RatingBar
+            android:id="@+id/rat_angel_sales"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            style="@style/roomRatingBar"
+            android:rating="5"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="47dp"
+            android:layout_marginEnd="47dp"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_below="@+id/addevaluate_image"
+        android:text="好评!值得推荐"
+        android:layout_margin="15dp"
+        android:padding="8dp"
+        android:maxLength="500"
+        android:gravity="left"
+        android:textSize="12dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="5dp"
+        android:id="@+id/add_angel_evaluate_content"
+        android:minLines="5"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_have_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_success"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/app_font_color_6c"
+            android:text="店铺已评价"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

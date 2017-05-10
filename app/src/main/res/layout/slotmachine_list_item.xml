@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_main_left_margin"
+            android:paddingRight="@dimen/app_main_right_margin">
+
+            <ImageView
+                android:id="@+id/slotmachine_manage_listleft_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/share_image"/>
+
+            <ImageView
+                android:id="@+id/slotmachine_manage_list_rightimage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_online"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/slotmachine_manage_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/slotmachine_manage_listleft_image"
+                android:layout_marginBottom="18dp"
+                android:layout_toRightOf="@+id/slotmachine_manage_listleft_image"
+                android:text="售货机名字"
+                android:textColor="@color/cube_mints_333333"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/slotmachine_manage_list_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slotmachine_manage_list_name"
+                android:layout_toRightOf="@+id/slotmachine_manage_listleft_image"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="广州市白云区黄边北路铭润商务大厦D804广州市白云区黄边北路铭润商务大厦D804"
+                android:textSize="14dp"/>
+
+
+        </RelativeLayout>
+
+
+        <com.pulamsi.views.checkBox.SmoothCheckBox
+            android:id="@+id/slotmachine_manage_list_scb"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            app:duration="100"
+            app:stroke_width="0.1dp"
+            />
+    </LinearLayout>
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+
+</LinearLayout>

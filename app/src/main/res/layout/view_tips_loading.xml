@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@null"
+     >
+
+    <View
+        android:id="@+id/v_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tips_bg"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <com.pulamsi.views.loading.AVLoadingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicator="LineSpinFadeLoader"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/tips_loading_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="3.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

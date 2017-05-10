@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--全局-->
+    <string name="msg_load_ing">加载中....</string>
+    <string name="app_name">普兰氏</string>
+    <string name="notice_networkerror">网络请求失败，请检查您的网络</string>
+    <string name="click_back_quit_message">再按一次退出普兰氏</string>
+    <string name="text_tab_home">首页</string>
+    <string name="text_tab_category">分类</string>
+    <string name="text_tab_slotmachine">售货机</string>
+    <string name="text_tab_shoppingcar">购物车</string>
+    <string name="text_tab_myinfo">我的</string>
+    <string name="loading_more_footer">加载中...</string>
+    <string name="load_finish_footer">没有更多内容了</string>
+    <string name="start_now">立即启动</string>
+    <string name="start_nouser">找不到此用户,请登陆正确的账号~</string>
+    <string name="comfirm_btn_str">确定</string>
+
+
+    <!-- alert dialog msg start-->
+    <string name="alert_dialog_confirm_to_delete_good_msg">确认删除选中的宝贝</string>
+    <string name="alert_dialog_confirm_to_store_good_msg">确认移入收藏夹</string>
+    <string name="alert_dialog_confirm_btn_str">确认</string>
+    <string name="alert_dialog_cancel_btn_str">取消</string>
+    <string name="alert_dialog_loading_str">正在加载</string>
+    <!-- alert dialog msg end-->
+
+    <!--首页，搜索 -->
+    <string name="home_search_hint_str">搜索您想要的商品</string>
+    <string name="home_shj">售货机</string>
+    <string name="home_fl">分类</string>
+    <string name="home_jf">积分</string>
+    <string name="home_my">我的</string>
+    <string name="home_tuijian">精选推荐</string>
+    <string name="home_dianzhu">店主推荐</string>
+    <string name="home_like">猜你喜欢</string>
+
+
+    <!-- 我的页面 开始 -->
+    <string name="my_info_my_collection">余额:¥0.0</string>
+    <string name="my_info_my_footprint">我的团队</string>
+    <string name="my_info_to_be_paid">待付款</string>
+    <string name="my_info_to_be_send">待发货</string>
+    <string name="my_info_to_be_received">待收货</string>
+    <string name="my_info_to_be_evaluation">待评价</string>
+    <string name="my_info_to_be_all">全部订单</string>
+    <string name="my_info_to_be_look_all">查看全部</string>
+    <!--<string name="my_info_to_be_returned">退货/售后</string>-->
+    <string name="my_info_to_be_returned">全部订单</string>
+    <string name="my_info_my_bank">我的钱包</string>
+    <string name="my_info_my_jf">我的积分</string>
+    <string name="my_info_my_address">收货地址</string>
+    <string name="my_info_my_taobao">淘宝商家</string>
+    <string name="my_info_my_accredit">授权查询</string>
+    <string name="my_info_my_setting">设置</string>
+    <string name="my_info_my_slotmachine">智能售货机</string>
+    <string name="my_info_my_slotmachine_share">售货机分享</string>
+    <string name="my_info_my_warehouse">库存管理</string>
+    <string name="my_info_my_quit">安全退出</string>
+    <string name="my_info_noLoginstring">还未登录,请先登录</string>
+    <!-- 我的页面 结束 -->
+
+    <!-- 登录页面 开始-->
+    <string name="login_title_str">登录</string>
+    <string name="login_phone_right_title_str">注册</string>
+    <string name="login_phone_hint_str">用户名或手机号</string>
+    <string name="login_password_hint_str">请输入4-20位数密码</string>
+    <string name="login_confirm_btn_str">登录</string>
+    <string name="login_forget_password_str">忘记密码？</string>
+    <string name="login_phone_fast_register_str">手机快速注册</string>
+    <string name="login_phone_invalid_msg">用户名不合法，请重新输入</string>
+    <string name="login_third_party_account_login_str">第三方账户登录</string>
+    <string name="login_priavcy_policy_str">隐私策略</string>
+    <string name="login_please_input_password">请输入密码</string>
+    <string name="login_please_input_password_legal">密码不合法</string>
+    <string name="login_username_or_pwd_is_not_right_str">用户名或密码错误</string>
+    <!-- 登录页面 结束-->
+
+
+    <!-- 注册/忘记密码/修改密码/快捷登录 开始-->
+    <string name="register_title_str">注册</string>
+    <string name="register_forgotpwd">找回密码</string>
+    <string name="register_set_pwd_title_str">设置密码</string>
+    <string name="register_phone_hint_str">请输入手机号</string>
+    <string name="register_phone_no_input_phone">请输入有效的手机号</string>
+    <string name="register_verification_code_hint_str">请输入验证码</string>
+    <string name="register_confirm_btn_str">注册</string>
+    <string name="register_phone_invalid_msg">手机号不合法，请重新输入</string>
+    <string name="register_verification_code_error_msg">验证码错误，请再次输入</string>
+    <string name="register_send_verification_code">发送验证码</string>
+    <string name="register_agree_deal">同意普兰氏用户协议</string>
+    <string name="register_confidentiality_agreement">保密和授权协议</string>
+    <string name="register_input_pwd_str">请输入4-20位密码</string>
+    <string name="register_input_pwd_again_str">请再次输入密码</string>
+    <string name="register_verification_code_overdue_msg">验证码已过期</string>
+    <string name="register_phone_has_register_msg">手机号已被注册</string>
+    <string name="register_password_invalid_msg">密码须由6-20位字母、数字、下划线(_)组合</string>
+    <string name="register_password_and_confirm_password_inconsistent">两次输入的密码不一致</string>
+    <string name="register_register_success_msg">注册成功，请重新登录!正在为您跳转</string>
+
+    <string name="forgot_password_title_str">忘记密码</string>
+    <string name="forgot_password_verify_btn_str">验证</string>
+    <string name="forgot_password_phone_has_not_register_msg">手机号未注册</string>
+
+    <string name="change_password_title_str">修改密码</string>
+    <string name="change_password_confirm_btn_str">提交</string>
+    <string name="change_password_input_pwd_hint">请输入4-20位新密码</string>
+    <string name="change_password_input_pwd_confirm_hint">请再次输入新密码</string>
+    <string name="change_password_change_success_msg">密码成功，请重新登录!正在为您跳转</string>
+
+    <string name="fast_login_title_str">手机号快捷登录</string>
+    <string name="fast_login_confirm_btn_str">验证并登录</string>
+    <!-- 注册/忘记密码/修改密码/快捷登录 结束-->
+
+    <!-- 收货地址 开始 -->
+    <string name="address_title">收货地址</string>
+    <string name="shipping_address_management_set_to_default_address_btn_str">设为默认</string>
+    <string name="shipping_address_management_set_to_address_edit_btn_str">编辑</string>
+    <string name="shipping_address_management_set_to_address_delete_btn_str">删除</string>
+    <string name="shipping_address_deleteOKmsg">删除成功</string>
+    <string name="shipping_address_saveOKmsg">新增成功</string>
+    <string name="shipping_address_updateOKmsg">修改成功</string>
+    <string name="shipping_address_alladdress">最多只能新建8个</string>
+    <string name="shipping_address_getaddress">请等待加载完数据在新建</string>
+    <string name="shipping_address_management_new_address_btn_str">新建地址</string>
+    <string name="my_info_my_address_empty">您还没有收货地址</string>
+    <string name="my_info_my_address_newaddress">新增收货地址</string>
+    <string name="my_info_my_address_updateaddress">修改收货地址</string>
+    <string name="my_info_my_address_newaddress_name">姓名:</string>
+    <string name="my_info_my_address_newaddress_name_hint">请输入姓名</string>
+    <string name="my_info_my_address_newaddress_mobile">手机号码:</string>
+    <string name="my_info_my_address_newaddress_mobile_hint">请输入手机号码</string>
+    <string name="my_info_my_address_newaddress_zcode">邮政编码:</string>
+    <string name="my_info_my_address_newaddress_zcode_hint">请输入邮政编码</string>
+    <string name="my_info_my_address_newaddress_area">省市区:</string>
+    <string name="my_info_my_address_newaddress_area_hint">点击选择省市区</string>
+    <string name="my_info_my_address_newaddress_addressinfo">详细地址:</string>
+    <string name="my_info_my_address_newaddress_addressinfo_hint">请输入详细地址</string>
+    <string name="my_info_my_address_newaddress_btn">添加</string>
+    <string name="new_shipping_address_user_name_null_hint_str">请输入姓名</string>
+    <string name="new_shipping_address_user_num_null_str">请输入手机号码</string>
+    <string name="new_shipping_address_user_area_null_str">请输入省市区</string>
+    <string name="new_shipping_address_user_detail_address_null_str">请输入详细地址</string>
+    <string name="new_shipping_address_user_zipcode_num_null_str">请输入邮政编码</string>
+    <string name="new_address_select_area_title">选择地址</string>
+    <string name="new_address_select_area_province">省份:</string>
+    <string name="new_address_select_area_city">城市:</string>
+    <string name="new_address_select_area_district">城区:</string>
+
+
+    <!-- 购物车 -->
+    <string name="shopping_car_good_list_default_price_str">0.00</string>
+    <string name="shopping_car_blanck_message">购物车空空如也</string>
+    <string name="shopping_car_blanck_login_message">您还没登录,请先登录</string>
+    <string name="shopping_car_shopping_btn_str">去逛逛</string>
+    <string name="shopping_car_item_delete_btn_str">删除</string>
+    <string name="shopping_car_buy_number_str">购买数量</string>
+    <string name="shopping_car_buy_price_str">商品价格</string>
+
+    <!-- 商品详情 -->
+    <string name="gooddetail_title">商品详情</string>
+    <string name="good_detail_img_detail_tab_str">图文详情</string>
+    <string name="good_detail_product_parameter_tab_str">产品参数</string>
+    <string name="good_detail_tax_faq_tab_str">售后保障</string>
+    <string name="good_detail_go_to_home_btn_str">首页</string>
+    <string name="good_detail_colect_btn_str">收藏</string>
+    <string name="good_detail_add_to_shopping_car_btn_str">加入购物车</string>
+    <string name="good_detail_buy_now_btn_str">立即购买</string>
+    <string name="good_detail_pull_up_to_load_img_detail_str">继续拖动,查看图文详情</string>
+    <string name="good_detail_delivery_fee_str">运费</string>
+    <string name="good_detail_slotmachine_str">售货机自取</string>
+    <string name="good_detail_evaluate_all">查看全部评价</string>
+    <string name="good_detail_evaluate_tab_all">全部</string>
+    <string name="good_detail_evaluate_tab_bad">差评</string>
+    <string name="good_detail_evaluate_tab_zhong">中评</string>
+    <string name="good_detail_evaluate_tab_good">好评</string>
+    <string name="good_detail_evaluate_loading_more_footer">评论正在加载中哦，请耐心等待一下吧~</string>
+    <string name="good_detail_evaluate_load_finish_footer">加载完成，已无更多评论~</string>
+    <string name="good_detail_evaluate_empty">没有相关评论</string>
+
+    <!-- 售货机管理 -->
+    <string name="slotmachine_manage_title">智能售货机</string>
+    <string name="slotmachine_manage_list_title">售货机列表</string>
+    <string name="slotmachine_manage_goodsroadlist_title">货道列表</string>
+    <string name="slotmachine_manage_goodsroad_alipay">更新支付宝</string>
+    <string name="slotmachine_manage_goodsroad_weixin">更新微信</string>
+    <string name="slotmachine_manage_goodsroad_num">货道号</string>
+    <string name="slotmachine_manage_goodsroad_goodsname">产品名称</string>
+    <string name="slotmachine_manage_goodsroad_goodsnum">货物数量</string>
+    <string name="slotmachine_manage_goodsroad_price">价格</string>
+    <string name="slotmachine_manage_addvender_title">添加售货机</string>
+    <string name="slotmachine_manage_addvender_id_null_hint_str">请输入售货机序号</string>
+    <string name="slotmachine_manage_addvender_sn_null_hint_str">请输入售货机编号</string>
+    <string name="slotmachine_manage_addvender_terminalname_null_hint_str">请输入售货机名字</string>
+    <string name="slotmachine_manage_addvender_pass_null_hint_str">请输入机器密码</string>
+    <string name="slotmachine_manage_addvender_sellertyp_null_hint_str">请输入售货机型号</string>
+    <string name="slotmachine_manage_addvender_telnum_null_hint_str">请输入服务电话</string>
+    <string name="slotmachine_manage_addvender_jiedao_null_hint_str">请输入详细地址</string>
+    <string name="slotmachine_manage_addvender_area_null_hint_str">请输入售货机地区</string>
+    <string name="slotmachine_manage_addvender_checkid_null_hint_str">该售货机编号已存在</string>
+    <string name="slotmachine_manage_addvender_saveOKmsg">新增成功</string>
+    <string name="slotmachine_manage_deallist_title">交易查询</string>
+    <string name="slotmachine_manage_deallist_loading_more_footer">交易记录正在加载中哦，请耐心等待一下吧~</string>
+    <string name="slotmachine_manage_deallist_load_finish_footer">加载完成，已无更多记录~</string>
+    <string name="slotmachine_manage_deallist_id">货机号</string>
+    <string name="slotmachine_manage_deallist_roadid">货道号</string>
+    <string name="slotmachine_manage_deallist_name">商品名称</string>
+    <string name="slotmachine_manage_deallist_price">金额</string>
+    <string name="slotmachine_manage_deallist_empty">您没有相关记录</string>
+    <string name="slotmachine_manage_stockoutcondition_title">缺货查看</string>
+    <string name="slotmachine_manage_fault_title">故障查看</string>
+    <string name="slotmachine_manage_goodsroaddetail_cargoNum">货机号</string>
+    <string name="slotmachine_manage_goodsroaddetail_num">货道号</string>
+    <string name="slotmachine_manage_goodsroaddetail_goodsname">产品名称</string>
+    <string name="slotmachine_manage_goodsroaddetail_goodsnum">产品数量</string>
+    <string name="slotmachine_manage_goodsroaddetail_goodscapacity">货道容量</string>
+    <string name="slotmachine_manage_goodsroaddetail_goodsprice">原价</string>
+    <string name="slotmachine_manage_goodsroaddetail_goodsdiscountPrice">当前价</string>
+    <string name="slotmachine_manage_goodsroaddetail_updatetime">更新时间</string>
+    <string name="slotmachine_manage_goodsroaddetail_faultinfo">故障信息</string>
+    <string name="slotmachine_manage_goodsroaddetail_faulttime">故障时间</string>
+    <string name="slotmachine_manage_goodsroaddetail_title">货道详情</string>
+    <string name="slotmachine_manage_tradedetail_title">交易详情</string>
+    <string name="slotmachine_manage_tradedetail_id">序号</string>
+    <string name="slotmachine_manage_tradedetail_liushuiid">交易编号</string>
+    <string name="slotmachine_manage_tradedetail_orderid">订单号</string>
+    <string name="slotmachine_manage_tradedetail_cardinfo">卡号</string>
+    <string name="slotmachine_manage_tradedetail_price">金额</string>
+    <string name="slotmachine_manage_tradedetail_receicetime">交易时间</string>
+    <string name="slotmachine_manage_tradedetail_tradetype">交易类型</string>
+    <string name="slotmachine_manage_tradedetail_goodmachineid">机器编号</string>
+    <string name="slotmachine_manage_tradedetail_innerid">货道号</string>
+    <string name="slotmachine_manage_tradedetail_goodsname">商品名称</string>
+    <string name="slotmachine_manage_tradedetail_changestatus">支付状态</string>
+    <string name="slotmachine_manage_tradedetail_sendstatus">出货状态</string>
+    <string name="slotmachine_manage_discount_title">商品折扣</string>
+    <string name="slotmachine_manage_discountselectproduct_title">选择商品</string>
+    <string name="slotmachine_list_empty">您还没有售货机</string>
+    <string name="slotmachine_list_slotmachine_empty">没有查到相应记录</string>
+
+
+
+    <!-- 订单 -->
+    <string name="order_list_title_all">我的订单</string>
+    <string name="order_detail_title">订单详情</string>
+    <string name="my_order_cancel_order_btn_str">取消订单</string>
+    <string name="my_order_delete_order_btn_str">删除订单</string>
+    <string name="my_order_pay_now_btn_str">立即付款</string>
+    <string name="my_order_affirm_str">确认收货</string>
+    <string name="my_order_pickupcode_str">取货码</string>
+    <string name="my_order_trace_str">查看物流</string>
+    <string name="my_order_all_tab_str">全部</string>
+    <string name="my_order_to_be_paid_tab_str">待付款</string>
+    <string name="my_order_to_be_send_tab_str">待发货</string>
+    <string name="my_order_to_be_received_tab_str">待收货</string>
+    <string name="my_order_empty">您没有相关订单</string>
+    <string name="my_order_data">您没有相关数据</string>
+    <string name="order_loading_more_footer">加载中...</string>
+    <string name="order_load_finish_footer">加载完成</string>
+    <string name="order_trace_title">物流信息</string>
+    <string name="order_detail_orderStatus">订单状态:</string>
+    <string name="order_detail_orderid">订单编号:</string>
+    <string name="order_detail_ordertime">创建时间:</string>
+    <string name="order_detail_orderpaytype">支付方式:</string>
+    <string name="order_detail_ordertotalprice">商品总金额:</string>
+    <string name="order_detail_expendTotalIntegral">消耗总积分:</string>
+    <string name="order_detail_orderdeliverfee">运费:</string>
+    <string name="order_detail_ordercoupon">使用优惠卷:</string>
+    <string name="order_confirmation_title">确认订单</string>
+    <string name="order_confirmation_bottom_submit">提交订单</string>
+    <string name="order_confirmation_consignee">收件人：</string>
+    <string name="order_confirmation_deliverytyper">配送方式</string>
+    <string name="order_confirmation_deliverytyper_str">快递 免邮</string>
+    <string name="order_confirmation_pay">付款方式</string>
+    <string name="order_confirmation_pay_str">在线支付</string>
+    <string name="order_confirmation_list_text">购物清单</string>
+    <string name="order_confirmation_accounts_str">结算</string>
+    <string name="order_confirmation_total">商品合计</string>
+    <string name="order_confirmation_total_fee">运费</string>
+    <string name="order_confirmation_freight_not">全国包邮</string>
+    <string name="order_confirmation_total_price">应付总额</string>
+    <string name="order_confirmation_total_point">应付积分</string>
+    <string name="order_confirmation_total_havepoint">您的剩余积分</string>
+    <string name="order_confirmation_message">买家留言</string>
+    <string name="order_confirmation_message_hint">在此处填写留言给卖家</string>
+
+
+
+    <!-- pay choice start -->
+    <string name="pay_choice">选择支付方式</string>
+    <string name="pay_choice_submit_order">订单已提交</string>
+    <string name="pay_choice_type">请选择支付方式</string>
+    <string name="pay_alipay">支付宝支付</string>
+    <string name="pay_choice_type_alipay_service">支付宝支付服务</string>
+    <string name="pay_choice_type_wechat_pay">微信支付</string>
+    <string name="pay_choice_type_wechat_safety_pay">微信安全支付</string>
+    <!-- pay choice end -->
+
+    <!-- 钱包 -->
+    <string name="my_info_wallet_title">我的钱包</string>
+    <string name="my_info_wallet_balancedetail_title">交易明细</string>
+    <string name="my_info_walletwithdrawdeposit_btn_str">提现</string>
+    <string name="my_info_walletrecharge_btn_str">充值</string>
+    <string name="my_info_wallet_all_tab_str">全部</string>
+    <string name="my_info_wallet_to_be_terrace_tab_str">平台</string>
+    <string name="my_info_wallet_to_be_slotmachine_tab_str">售货机</string>
+    <string name="my_info_wallet_to_be_store_tab_str">佣金</string>
+    <string name="my_info_wallet_empty">您没有相关记录</string>
+    <string name="my_info_wallet_bankinfo_title">银行卡列表</string>
+    <string name="my_info_wallet_bankinfo_addbankinfo">新增银行卡</string>
+    <string name="my_info_wallet_bankinfo_empty">您还没绑定银行卡信息</string>
+    <string name="my_info_wallet_bankinfo_add_name">持卡人</string>
+    <string name="my_info_wallet_bankinfo_add_name_hint">请输入持卡人名字</string>
+    <string name="my_info_wallet_bankinfo_add_bank">所属银行</string>
+    <string name="my_info_wallet_bankinfo_add_bank_hint">点击选择银行</string>
+    <string name="my_info_wallet_bankinfo_add_bank_null_str">请选择银行</string>
+    <string name="my_info_wallet_bankinfo_add_cardNumber">卡号</string>
+    <string name="my_info_wallet_bankinfo_add_cardNumber_hint">请输入卡号</string>
+    <string name="my_info_wallet_bankinfo_add_cardNumber_no_input">请输入完整的卡号</string>
+    <string name="my_info_wallet_bankinfo_add_title">新增银行卡</string>
+    <string name="my_info_wallet_withdrawdeposit_title">余额提现</string>
+    <string name="my_info_wallet_withdrawdeposit_money_null">请输入金额</string>
+    <string name="my_info_wallet_withdrawdeposit_money_full">提现金额不能超过余额</string>
+    <string name="my_info_wallet_withdrawdeposit_money_not">请输入正确的金额</string>
+    <string name="my_info_wallet_loading_more_footer">交易明细正在加载中哦，请耐心等待一下吧~</string>
+    <string name="my_info_wallet_load_finish_footer">加载完成，已无更多明细~</string>
+
+    <!-- 搜索入口页 开始 -->
+    <string name="search_door_right_title_str">搜索</string>
+    <string name="search_door_clear_history_world_record_str">清除历史记录</string>
+    <string name="search_door_hot_search_word_str">热门搜索</string>
+    <string name="search_door_hot_search_empty">没有相关的商品</string>
+    <!-- 搜索入口页 结束 -->
+
+
+    <!-- 淘宝商家 开始 -->
+    <string name="my_info_taobaostore_title">淘宝商家</string>
+    <string name="my_info_taobaostore_loading_more_footer">店铺正在加载中哦，请耐心等待一下吧~</string>
+    <string name="my_info_taobaostore_load_finish_footer">加载完成，已无更多店铺~</string>
+    <!-- 授权查询 开始 -->
+    <string name="my_info_accreditquery_title">授权查询</string>
+    <string name="my_info_accreditquery_empty">没有找到相关的记录</string>
+
+    <!-- number edit view start -->
+    <string name="number_edit_view_item_num_minus_str">-</string>
+    <string name="number_edit_view_item_num_plus_str">+</string>
+    <!-- number edit view end -->
+
+
+
+    <!-- 我的团队 -->
+    <string name="myteam_title">我的团队</string>
+    <string name="myteam_empty">您还没有团队记录</string>
+
+    <!-- 设置界面 -->
+    <string name="my_info_setting_title">设置</string>
+    <string name="my_info_setting_about">关于我们</string>
+    <string name="my_info_setting_update">检查更新</string>
+    <string name="my_info_setting_security">修改密码</string>
+
+
+    <!-- 用户信息 -->
+    <string name="my_info_userinfo_title">帐户信息</string>
+    <!-- 用户信息 -->
+    <string name="modify_email">修改邮箱</string>
+    <string name="modify_name">修改姓名</string>
+    <string name="detailed_address">修改地址</string>
+
+    <!-- 分享文字 -->
+    <string name="share_title">普兰氏终端销售新风尚</string>
+    <string name="share_content">美丽无处不在，财富由你掌握。</string>
+    <string name="share_targetUrl">shop/member/contract/knowVander.html</string>
+
+    <string name="share_productUrl">index/productDetails/show.html</string>
+
+
+
+    <!-- 积分 -->
+    <string name="integral_title">积分商城</string>
+    <string name="integral_my_title">我的积分</string>
+    <string name="integral_detail_list_title">积分明细</string>
+    <string name="integral_store_jf">积分兑换区</string>
+    <string name="integral_store_jfandmoney">积分加钱兑换区</string>
+    <string name="integral_detail_empty">您没有相关记录</string>
+    <string name="integral_detail_store_empty">没有相关积分商品</string>
+    <string name="integral_detail_loading_more_footer">积分明细正在加载中哦，请耐心等待一下吧~</string>
+    <string name="integral_detail_load_finish_footer">加载完成，已无更多明细~</string>
+
+    <!-- 商品评论 -->
+    <string name="evaluate_title">商品评论</string>
+    <string name="addevaluate_title">新增评论</string>
+    <string name="addevaluate_evaluate">立即评价</string>
+
+    <!-- 用户信息 -->
+    <string name="choose_birthday">选择生日</string>
+
+    <!-- 防伪 -->
+    <string name="security_integral">积分请输入暗码(涂层下6位数码)及手机号</string>
+
+    <!--SweetDialog-->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+
+    <!--intent-->
+    <string name="load_fild">抱歉，网络不给力！</string>
+
+    <!--退款管理-->
+    <string name="order_refund_management" >退款管理</string>
+    <string name="order_refund_wechat" >微信支付</string>
+    <string name="order_refund_alipay" >支付宝支付</string>
+
+    <string name="copyright_info">广州普兰氏信息科技有限公司\nCopyright © 2016, Pulamsi.com All rights reserved</string>
+    <string name="no_update">已经是最新版本</string>
+    <string name="no_wifi_update">没有wifi连接， 只在wifi下更新</string>
+    <string name="update_timeout">连接超时,请检查网络</string>
+    <string name="update_weibo">新浪微博</string>
+    <string name="update_home">官方主页</string>
+    <string name="change_password_input">请输入6-20位新密码</string>
+    <string name="change_phone_bind_btn">验证后绑定新手机</string>
+    <string name="change_password_btn">修改密码</string>
+    <string name="change_password_prompt">验证码将发送至手机</string>
+
+    <string name="slotmachine_check_all">全选</string>
+    <string name="slotmachine_uncheck_all">取消全选</string>
+    <string name="select_entry">选择条目</string>
+
+    <string name="found_new_version">发现新版本</string>
+    <string name="update_now">立即更新</string>
+    <string name="later_update">以后再说</string>
+    <string name="start_download">开始下载</string>
+    <string name="download_success">下载完成</string>
+    <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="is_downloading">正在下载</string>
+
+    <string name="snapup_title">限时抢购</string>
+    <string name="snapup_now">正在进行</string>
+    <string name="snapup_later">即将开始</string>
+
+
+    <string name="angel_goods">商品列表</string>
+    <string name="angel_evaluation">累计评价</string>
+
+
+    <string name="above_level">高于行业水平</string>
+    <string name="below_level">低于行业水平</string>
+    <string name="equal_level">与行业持平</string>
+
+    <string name="change_phone">换绑手机</string>
+
+
+
+</resources>

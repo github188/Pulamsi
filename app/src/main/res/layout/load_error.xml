@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <tr.xip.errorview.ErrorView
+        android:id="@+id/error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ev_retryButtonText="重新加载"
+        app:ev_title="Sorry"
+        app:ev_retryButtonTextColor="@color/app_pulamsi_main_color"
+        app:ev_subtitle="@string/load_fild" />
+
+</LinearLayout>

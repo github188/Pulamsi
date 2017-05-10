@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!-- divider-->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_line_bg"
+            android:layout_alignParentTop="true"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/good_detail_bottom_operation_bar_height">
+
+        <!-- 到首页 -->
+        <LinearLayout
+                android:id="@+id/ll_good_detail_go_to_home_btn"
+                android:layout_width="61dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_btn_solid_white"
+                android:gravity="center">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_home_normal"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:textColor="@color/app_font_color_6c"
+                    android:text="@string/good_detail_go_to_home_btn_str"/>
+        </LinearLayout>
+
+        <!-- divider-->
+        <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+        <!-- 加入购物车 -->
+        <TextView
+                android:id="@+id/tv_good_detail_add_to_shopping_car_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_btn_solid_app_hai_tao_color"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="@string/good_detail_add_to_shopping_car_btn_str"/>
+
+        <!-- 立即购买 -->
+        <TextView
+                android:id="@+id/tv_good_detail_buy_now_car_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_btn_solid_main_color"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="@string/good_detail_buy_now_btn_str"/>
+
+    </LinearLayout>
+
+</LinearLayout>

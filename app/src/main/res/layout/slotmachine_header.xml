@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slotmachine_header"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/slotmachine_background"
+    android:layout_height="50dp">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="省份"
+       android:drawableRight="@drawable/slotmachine_right"
+       android:id="@+id/slotmachine_province"
+       android:gravity="center"
+       android:layout_weight="1"/>
+    <View
+        android:layout_width="2px"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/app_divider_line_bg_e4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="市"
+        android:id="@+id/slotmachine_city"
+        android:drawableRight="@drawable/slotmachine_right"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="2px"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/app_divider_line_bg_e4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="区域"
+        android:id="@+id/slotmachine_district"
+        android:drawableRight="@drawable/slotmachine_right"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="2px"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/app_divider_line_bg_e4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableRight="@drawable/slotmachine_right"
+        android:text="列表"
+        android:id="@+id/slotmachine_mode"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

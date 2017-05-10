@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewshape_top"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/my_info_wallet_bankinfo_add_name" />
+
+            <EditText
+                android:id="@+id/my_info_wallet_bankinfo_add_name"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/app_font_color_56"
+                android:hint="@string/my_info_wallet_bankinfo_add_name_hint"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_all" >
+            </EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewshape"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/my_info_wallet_bankinfo_add_bank" />
+
+            <TextView
+                android:id="@+id/my_info_wallet_bankinfo_add_bank"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/my_info_wallet_bankinfo_add_bank_hint"
+                android:textSize="16dp"
+                android:textColor="@color/app_font_color_56"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewshape_bottom"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/my_info_wallet_bankinfo_add_cardNumber" />
+
+            <EditText
+                android:id="@+id/my_info_wallet_bankinfo_add_cardNumber"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/app_font_color_56"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:maxLength="23"
+                android:layout_height="40dp"
+                android:hint="@string/my_info_wallet_bankinfo_add_cardNumber_hint"
+                android:background="@drawable/edittext_all" >
+            </EditText>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/my_info_wallet_bankinfo_add_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+            android:textSize="@dimen/button_text_size"
+            android:text="@string/my_info_my_address_newaddress_btn"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

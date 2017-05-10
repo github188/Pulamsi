@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/app_shop"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:text="Pulamsi"
+                android:textColor="@color/app_font_color_56"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_Version_Code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/app_font_color_77"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/about_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_update"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/my_info_setting_update"
+                android:textColor="@color/app_font_color_56"
+                android:textSize="15sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_line_bg"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/app_divider_line_bg_cc"
+                />
+
+
+            <TextView
+                android:id="@+id/about_home"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawableLeft="@drawable/update_home"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/update_home"
+                android:textColor="@color/app_font_color_56"
+                android:textSize="15sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_line_bg"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/app_divider_line_bg_cc"
+                />
+
+
+            <TextView
+                android:id="@+id/about_weibo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawableLeft="@drawable/about_weibo"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/update_weibo"
+                android:textColor="@color/app_font_color_56"
+                android:textSize="15sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_line_bg"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/app_divider_line_bg_cc"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/copyright_info"
+        android:textColor="@color/app_font_color_a1"
+        android:textSize="10sp"
+        />
+</RelativeLayout>

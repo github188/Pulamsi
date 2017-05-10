@@ -1,0 +1,638 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1"
+    android:versionName="1.0.0"
+    package="com.pulamsi">
+
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 往 SDCard 写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- add it for camera scan use -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <!-- call phone-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!--二维码扫描的权限-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".activity.PulamsiApplication"
+        android:icon="@drawable/app_shop"
+        android:launchMode="singleTop"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Pulamsi">
+
+
+        <!--程序入口,启动页面 -->
+        <activity android:name=".start.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 新人引导页面 -->
+        <activity
+            android:name=".start.GuideActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 导航页面 -->
+        <activity
+            android:name=".start.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 登录界面 -->
+        <activity
+            android:name=".loginregister.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 注册界面 -->
+        <activity
+            android:name=".loginregister.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 注册设置密码界面 -->
+        <activity
+            android:name=".loginregister.RegisterSetPwdActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 收货地址列表界面 -->
+        <activity
+            android:name=".myinfo.address.AddressListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 新增收货地址界面 -->
+        <activity
+            android:name=".myinfo.address.AddAddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 售货机管理界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.ManageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机列表界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.SlotmachineListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情界面 -->
+        <activity
+            android:name=".gooddetail.GoodDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机货道列表界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.GoodsRoadListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机货道详情界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.GoodsRoadDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的订单界面 -->
+        <activity
+            android:name=".myinfo.order.MyOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情界面 -->
+        <activity
+            android:name=".myinfo.order.OrderDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 物流信息界面 -->
+        <activity
+            android:name=".myinfo.order.TraceOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 选择支付界面 -->
+        <activity
+            android:name=".myinfo.order.ChoicePayTypeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 添加售货机界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.AddVenderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机交易查询界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.DealListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机交易详情界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.TradeDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机缺货查看界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.StockoutConditionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机故障查看界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.FaultActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机商品折扣界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.DiscountActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机商品折扣选择商品界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.DiscountSelectProductActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机商品折扣选择售货机界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.DiscountSelectSlotmachineActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 售货机地图界面 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.SlotmachineMapListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的钱包界面 -->
+        <activity
+            android:name=".myinfo.wallet.WalletActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的钱包交易明细界面 -->
+        <activity
+            android:name=".myinfo.wallet.BalanceDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的钱包银行卡列表界面 -->
+        <activity
+            android:name=".myinfo.wallet.BankinfoListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的钱包新增银行卡界面 -->
+        <activity
+            android:name=".myinfo.wallet.InputBankInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的钱包提现界面 -->
+        <activity
+            android:name=".myinfo.wallet.WithdrawDepositActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 首页搜索入口界面 -->
+        <activity
+            android:name=".search.SearchDoorActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 首页搜索列表界面 -->
+        <activity
+            android:name=".search.SearchListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 淘宝商家列表界面 -->
+        <activity
+            android:name=".myinfo.taobaostore.TaobaoStoreActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 访问html的webview界面 -->
+        <activity
+            android:name=".webview.CommonWebViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 正品渠道查询界面 -->
+        <activity
+            android:name=".myinfo.AccreditQuery.AccreditQueryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的团队界面 -->
+        <activity
+            android:name=".myinfo.myteam.MyTeamActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 确认订单界面 -->
+        <activity
+            android:name=".myinfo.order.OrderConfirmationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 设置界面 -->
+        <activity
+            android:name=".myinfo.setting.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们界面 -->
+        <activity
+            android:name=".myinfo.setting.AboutActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 帐户信息界面 -->
+        <activity
+            android:name=".myinfo.setting.UserInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 我的积分界面 -->
+        <activity
+            android:name=".integral.IntegralActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 积分明细界面 -->
+        <activity
+            android:name=".integral.IntegralDetailListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 积分商城界面 -->
+        <activity
+            android:name=".integral.IntegralStoreActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 商品评论界面 -->
+        <activity
+            android:name=".evaluate.EvaluateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 新增评论界面 -->
+        <activity
+            android:name=".evaluate.AddEvaluateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 修改号码界面 -->
+        <activity
+            android:name=".myinfo.setting.activity.ModifyPhone"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 修改邮箱界面 -->
+        <activity
+            android:name=".myinfo.setting.activity.ModifyEmail"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 修改邮箱界面 -->
+        <activity
+            android:name=".myinfo.setting.activity.ModifyName"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <!-- 修改地址界面 -->
+        <activity
+            android:name=".myinfo.setting.activity.DetailedAddress"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 天使商品详情界面 -->
+        <activity
+            android:name=".angelgooddetail.gooddetail.GoodDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 微信支付结果回调界面 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        
+        <!--二维码-->
+        <activity android:name=".views.qrcode.activity.CaptureActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:exported="true"
+                  android:windowSoftInputMode="stateHidden|adjustPan"
+                  android:screenOrientation="portrait"></activity>
+
+        <!--图片缩放PhotoView-->
+        <activity
+            android:name=".views.PhotoView.PhotoviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 防伪界面 -->
+        <activity
+            android:name=".security.SecurityActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 防伪界面 -->
+        <activity
+            android:name=".myinfo.order.OrderRefundActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 退款管理 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.RefundManagementActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 退款管理详情 -->
+        <activity
+            android:name=".myinfo.slotmachineManage.RefundDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 退款管理详情 -->
+        <activity
+            android:name=".myinfo.setting.ChangePasswordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- 抢购更多界面 -->
+        <activity
+            android:name=".snapup.SnapUpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!--天使更多界面 -->
+        <!--涉及到搜索所以要改变启动模式standard-->
+        <activity
+            android:name=".angel.AngelActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!--天使详情界面 -->
+        <activity
+            android:name=".angel.AngelDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".views.qrcode.activity.ResultActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 百度key -->
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="RGhRN1ttX5UEPIAQ3tl1WM9G"/>
+        <!--<meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6kbjPSLX8nMK5WTRbgsVKDbK"/>-->
+
+        <!-- 百度服务 -->
+        <service
+            android:enabled="true"
+            android:name="com.baidu.location.f"
+            android:process=":remote">
+        </service>
+
+        <!-- 支付宝支付调用H5-->
+        <activity
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+
+        <!--友盟 Start -->
+        <!-- 友盟key -->
+        <meta-data
+            android:value="563b1030e0f55aa81a001320"
+            android:name="UMENG_APPKEY"></meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID"/>
+
+        <service android:name=".utils.update.DownloadService"/>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            android:exported="true"
+            android:name=".wxapi.WXEntryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <receiver android:name=".pay.wx.simcpux.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+        <!--友盟 End -->
+
+
+
+    </application>
+
+</manifest>

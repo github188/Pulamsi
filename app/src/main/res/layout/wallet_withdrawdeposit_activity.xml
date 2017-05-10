@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textviewshape_5dpcorners"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/wallet_withdrawdeposit_bankcard"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="银行卡" />
+
+        <TextView
+            android:id="@+id/wallet_withdrawdeposit_bankcard_edit"
+            android:layout_width="match_parent"
+            android:hint="使用新卡提现"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_toRightOf="@+id/wallet_withdrawdeposit_bankcard"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewshape_edittext_2dpcorners_maincolor" >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textviewshape_5dpcorners"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/wallet_withdrawdeposit_money"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="金额(元)" />
+
+        <EditText
+            android:id="@+id/wallet_withdrawdeposit_money_edit"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/wallet_withdrawdeposit_money"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/app_font_color_56"
+            android:numeric="decimal"
+            android:hint="当前余额0.00元"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_all" >
+        </EditText>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/wallet_withdrawdeposit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/white"
+        android:text="下一步"/>
+
+</LinearLayout>

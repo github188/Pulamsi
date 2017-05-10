@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/order_confirmation_bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- 收件人信息-->
+            <include layout="@layout/order_confirmation_consignee"/>
+
+            <include layout="@layout/order_confirmation_consignee_nor"/>
+
+            <!-- 分割线-->
+            <include layout="@layout/divider_bg_line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="@dimen/app_main_left_margin"
+                android:paddingTop="12dp"
+                android:text="@string/order_confirmation_list_text"
+                android:textColor="@color/app_pulamsi_main_color"/>
+
+            <!-- 列表 -->
+            <com.taobao.uikit.feature.view.TRecyclerView
+                android:id="@+id/order_confirmation_trecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                ></com.taobao.uikit.feature.view.TRecyclerView>
+
+            <!-- 分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="6dp"
+                android:background="@color/app_divider_line_bg_e8"
+                android:visibility="gone"/>
+
+            <!-- 配送方式 -->
+            <RelativeLayout
+                android:id="@+id/order_confirmation_delivery_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_delivery_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/order_confirmation_deliverytyper"
+                    android:textColor="@color/app_font_color_2f"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:id="@+id/order_confirmation_coupon_more_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/ic_list_more"/>
+
+                <TextView
+                    android:id="@+id/order_confirmation_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/order_confirmation_delivery_text"
+                    android:layout_marginBottom="14dp"
+                    android:layout_toLeftOf="@+id/order_confirmation_coupon_more_icon"
+                    android:text="@string/order_confirmation_deliverytyper_str"
+                    android:textColor="@color/app_btn_main_color"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+            <!-- 分割线-->
+            <include layout="@layout/divider_bg_line"/>
+
+            <!-- 付款方式 -->
+            <RelativeLayout
+                android:id="@+id/order_confirmation_pay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_pay_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/order_confirmation_pay"
+                    android:textColor="@color/app_font_color_2f"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:id="@+id/order_confirmation_pay_more"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/ic_list_more"/>
+
+                <TextView
+                    android:id="@+id/order_confirmation_pay_defult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/order_confirmation_pay_text"
+                    android:layout_marginBottom="14dp"
+                    android:layout_toLeftOf="@+id/order_confirmation_pay_more"
+                    android:text="@string/order_confirmation_pay_str"
+                    android:textColor="@color/app_btn_main_color"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+            <!-- 分割线-->
+            <include layout="@layout/divider_bg_line"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="@dimen/app_main_left_margin"
+                android:paddingTop="12dp"
+                android:text="@string/order_confirmation_accounts_str"
+                android:textColor="@color/app_pulamsi_main_color"/>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_tota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginTop="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:text="@string/order_confirmation_total"
+                    android:textColor="@color/app_font_color_77"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/order_confirmation_tota_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/order_confirmation_tota"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    android:textColor="@color/app_font_color_2f"
+                    android:textSize="16dp"/>
+            </RelativeLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginTop="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:text="@string/order_confirmation_total_fee"
+                    android:textColor="@color/app_font_color_77"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:id="@+id/order_confirmation_freight_not_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/order_confirmation_fee"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/order_confirmation_total_fee"
+                    android:background="@color/app_btn_main_color">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/order_confirmation_freight_not"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_confirmation_total_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/order_confirmation_fee"
+                    android:layout_marginRight="14dp"
+                    android:textSize="16dp"/>
+            </RelativeLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_amount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginTop="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:text="@string/order_confirmation_total_price"
+                    android:textColor="@color/app_font_color_77"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/order_confirmation_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/order_confirmation_amount_text"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    android:textColor="@color/app_font_color_2f"
+                    android:textSize="16dp"/>
+            </RelativeLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_point_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginTop="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:text="@string/order_confirmation_total_point"
+                    android:textColor="@color/app_font_color_77"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/order_confirmation_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/order_confirmation_point_text"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    android:textColor="@color/app_font_color_2f"
+                    android:textSize="16dp"/>
+            </RelativeLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_havepoint_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginTop="@dimen/order_confirmation_list_margin_top_and_bottom"
+                    android:text="@string/order_confirmation_total_havepoint"
+                    android:textColor="@color/app_font_color_77"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/order_confirmation_havepoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/order_confirmation_havepoint_text"
+                    android:layout_marginRight="14dp"
+                    android:text=""
+                    android:textColor="@color/app_btn_main_color"
+                    android:textSize="16dp"/>
+            </RelativeLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/order_confirmation_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_confirmation_message"
+                    android:textColor="@color/app_font_color_77"
+                    android:textSize="14dp"/>
+
+                <EditText
+                    android:id="@+id/order_confirmation_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:layout_marginRight="@dimen/app_main_right_margin"
+                    android:layout_toRightOf="@+id/order_confirmation_message_text"
+                    android:background="@drawable/edittext_all"
+                    android:hint="@string/order_confirmation_message_hint"
+                    android:maxLines="2"
+                    android:textColor="@color/app_font_color_2f"
+                    android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/order_confirmation_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/order_confirmation_bottom_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:text="合计："
+            android:textColor="@color/app_btn_main_color"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/order_confirmation_bottom_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/order_confirmation_bottom_total"
+            android:layout_toRightOf="@+id/order_confirmation_bottom_total"
+            android:textColor="@color/app_btn_main_color"
+            android:textSize="16dp"/>
+
+        <RelativeLayout
+            android:id="@+id/order_confirmation_bottom_submit_layout"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1px"
+            android:background="@color/app_btn_main_color">
+
+            <TextView
+                android:id="@+id/order_confirmation_bottom_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/order_confirmation_bottom_submit"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/order_confirmation_divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignTop="@+id/order_confirmation_bottom"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+</RelativeLayout>

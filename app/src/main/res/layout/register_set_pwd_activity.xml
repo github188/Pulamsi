@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_divider_bg">
+
+    <!-- topPos blank area -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+
+    <EditText
+            android:id="@+id/et_register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="9dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:inputType="textPassword"
+            android:filterTouchesWhenObscured="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp"
+            android:textColorHint="@color/app_font_color_a1"
+            android:textColor="@color/app_font_color_2f"
+            android:hint="@string/register_input_pwd_str"/>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+    <!-- security code input -->
+    <EditText
+            android:id="@+id/et_register_confirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="9dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="14dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:inputType="textPassword"
+            android:filterTouchesWhenObscured="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp"
+            android:textColorHint="@color/app_font_color_a1"
+            android:textColor="@color/app_font_color_2f"
+            android:hint="@string/register_input_pwd_again_str"/>
+
+
+    <!-- divider -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+    <!-- register button -->
+    <TextView
+            android:id="@+id/tv_register_confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/button_text_size"
+            android:textColor="@color/white"
+            android:text="@string/register_confirm_btn_str"/>
+
+</LinearLayout>

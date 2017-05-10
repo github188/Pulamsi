@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_weight="0"
+        android:background="#cccccc"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+       >
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:maxLength="30"
+        android:layout_toLeftOf="@+id/iv_delete"
+        />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_delete_gray"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_weight="0"
+        android:background="#cccccc"
+        />
+
+</LinearLayout>

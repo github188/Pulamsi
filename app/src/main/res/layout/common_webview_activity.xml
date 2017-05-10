@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView
+            android:id="@+id/wv_common_webview_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/progress"
+        style="@style/GNowProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminate="true"
+        />
+</RelativeLayout>

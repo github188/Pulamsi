@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <!-- check box-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/good_detail_price_checkbox"
+        android:button="@drawable/checkbox_circle_selector"
+        android:background="@color/white"
+        android:textColor="@color/app_btn_main_color"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/good_detail_price_content"
+        android:textSize="18dp"
+        android:textColor="@color/red"
+        android:gravity="center_vertical"
+        android:text="120+12"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+</LinearLayout>

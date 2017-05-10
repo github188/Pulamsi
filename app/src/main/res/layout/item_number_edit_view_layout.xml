@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_item_edit_main_layout"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tv_item_edit_item_num_minus"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="25dp"
+            android:textColor="@color/app_font_color_c2"
+            android:text="@string/number_edit_view_item_num_minus_str"
+            android:background="@drawable/layer_list_bg_stroke_c2_1px_1px_0_1px_solid_transparent"
+            android:clickable="false"/>
+    <EditText
+            android:id="@+id/tv_item_edit_item_num"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:textColor="@color/app_font_color_2f"
+            android:text="1"
+            android:background="@drawable/shape_bg_stroke_2f_1px_solid_transparent"/>
+    <TextView
+            android:id="@+id/tv_item_edit_item_num_plus"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="20dp"
+            android:textColor="@color/app_font_color_2f"
+            android:text="@string/number_edit_view_item_num_plus_str"
+            android:background="@drawable/layer_list_bg_stroke_c2_0_1px_1px_1px_solid_transparent"
+            android:clickable="false"/>
+</LinearLayout>

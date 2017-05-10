@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_divider_bg"
+    android:orientation="vertical">
+
+    <!-- topPos blank area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password_prompt"
+            android:textColor="@color/app_font_color_99"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_change_password_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_font_color_99"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_change_password_verification_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="9dp"
+            android:ellipsize="end"
+            android:filterTouchesWhenObscured="true"
+            android:gravity="center_vertical"
+            android:hint="@string/register_verification_code_hint_str"
+            android:inputType="number"
+            android:paddingBottom="16dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:textColor="@color/app_font_color_2f"
+            android:textColorHint="@color/app_font_color_a1"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16dp"/>
+
+        <!-- send verification code -->
+        <com.pulamsi.views.CountdownView
+            android:id="@+id/cdv_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="14dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="14dp"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+    <!-- register button -->
+    <TextView
+        android:id="@+id/tv_change_password_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:singleLine="true"
+        android:text="@string/change_phone_bind_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"/>
+
+</LinearLayout>

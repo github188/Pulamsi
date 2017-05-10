@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <!-- 货机号 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_cargoNum"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_cargoNum"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 货道号 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_num"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_num"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!-- 产品名称 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_goodsname"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_goodsname"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 货物数量 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_goodsnum"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_goodsnum"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 货道容量 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_goodscapacity"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_goodscapacity"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 原价 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_goodsprice"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_goodsprice"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 当前价 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_goodsdiscountPrice"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_goodsdiscountPrice"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 更新时间 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_updatetime"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_updatetime"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 故障信息 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_faultinfo"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_faultinfo"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- 故障时间 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/slotmachine_manage_goodsroaddetail_faulttime"
+            android:gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_goodsroaddetail_faulttime"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

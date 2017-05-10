@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--skin attrubite @lailiao.fll-->
+<resources>
+    <!--  Dot container -->
+    <declare-styleable name="DotContainer">
+        <attr format="dimension" name="my_dot_radius"/>
+        <attr format="dimension" name="my_dot_span"/>
+        <attr format="integer" name="my_dot_unselected_color"/>
+        <attr format="integer" name="my_dot_selected_color"/>
+    </declare-styleable>
+
+    <!-- slider banner -->
+    <declare-styleable name="SliderBanner">
+        <attr format="reference" name="my_slider_banner_indicator"/>
+        <attr format="reference" name="my_slider_banner_pager"/>
+        <attr format="integer" name="my_slider_banner_time_interval"/>
+        <attr format="boolean" name="my_slider_banner_recycle_show"/>
+        <attr format="boolean" name="my_slider_banner_auto_play"/>
+    </declare-styleable>
+
+    <!-- Material Ripple Layout -->
+    <declare-styleable name="MaterialRippleLayout">
+        <attr format="color" localization="suggested" name="mrl_rippleColor"/>
+        <attr format="dimension" localization="suggested" name="mrl_rippleDimension"/>
+        <attr format="boolean" localization="suggested" name="mrl_rippleOverlay"/>
+        <attr format="float" localization="suggested" name="mrl_rippleAlpha"/>
+        <attr format="integer" localization="suggested" name="mrl_rippleDuration"/>
+        <attr format="integer" localization="suggested" name="mrl_rippleFadeDuration"/>
+        <attr format="boolean" localization="suggested" name="mrl_rippleHover"/>
+        <attr format="color" localization="suggested" name="mrl_rippleBackground"/>
+        <attr format="boolean" localization="suggested" name="mrl_rippleDelayClick"/>
+        <attr format="boolean" localization="suggested" name="mrl_ripplePersistent"/>
+        <attr format="boolean" localization="suggested" name="mrl_rippleInAdapter"/>
+        <attr format="dimension" localization="suggested" name="mrl_rippleRoundedCorners"/>
+    </declare-styleable>
+
+    <!-- Auto Fit View Group -->
+    <declare-styleable name="autoFitViewGroup">
+        <attr name="rowMargin" format="dimension"/>
+        <attr name="columnMargin" format="dimension"/>
+    </declare-styleable>
+</resources>

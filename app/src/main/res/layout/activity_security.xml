@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_divider_bg"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/app_pulamsi_main_color"
+            android:orientation="horizontal"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_security_message"
+                android:scrollbars="none"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.pulamsi.views.secucrity.SecuritySuccessView
+                        android:id="@+id/ss_SuccessView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:visibility="gone"
+                        >
+                    </com.pulamsi.views.secucrity.SecuritySuccessView>
+
+                    <TextView
+                        android:id="@+id/tv_security_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ss_SuccessView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        />
+                </RelativeLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/ll_security_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_security_code"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查询次数"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_security_queryCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/app_line_bg"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="首次查询时间"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_security_first_querydate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_security_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#33ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="防伪码:"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:id="@+id/sl_lower_part"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="18dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/security_integral"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_secret_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_secret_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="请输入6位数暗码"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textSize="16dp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="请输入已注册的手机号"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:textSize="16dp"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_btn_solid_green_color_corner_2dp"
+                    android:text="积分"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="防伪电话:"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400-8088-884"
+                android:textColor="@color/app_pulamsi_main_color"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--LoadViewHelper的状态布局-->
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+</RelativeLayout>

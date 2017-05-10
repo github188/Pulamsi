@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="286dp"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:gravity="center"
+              android:background="#dfffffff"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tv_common_alert_dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/alert_dialog_confirm_to_delete_good_msg"
+            android:textColor="@color/app_font_color_2f"
+            android:textSize="14dp"
+            />
+
+    <!-- divider -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+    <!-- middle content start -->
+    <LinearLayout
+            android:id="@+id/vg_middle_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    </LinearLayout>
+    <View
+            android:id="@+id/divider_middle_content"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e2"/>
+    <!-- middle content end -->
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+        <TextView
+                android:id="@+id/tv_common_alert_dialog_left_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/alert_dialog_cancel_btn_str"
+                android:textColor="@color/app_font_color_2f"
+                android:textSize="14dp"/>
+
+        <!-- divider -->
+        <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+        <TextView
+                android:id="@+id/tv_common_alert_dialog_right_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/alert_dialog_confirm_btn_str"
+                android:textColor="@color/app_font_color_2f"
+                android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

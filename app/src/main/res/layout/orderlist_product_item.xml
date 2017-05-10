@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/good_item_background"
+    >
+    <!-- divider -->
+
+    <RelativeLayout
+        android:background="@color/good_item_background"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+        android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+        <!-- 产品图片 -->
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/orderlist_product_item_icon"
+            android:src="@drawable/ic_product"
+            android:layout_height="70dp" />
+        <!-- 产品名字 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@+id/orderlist_product_item_icon"
+            android:layout_toRightOf="@+id/orderlist_product_item_icon"
+            android:text="柠檬滋养养润手霜"
+            android:textColor="@color/app_font_color_56"
+            android:id="@+id/orderlist_product_item_name"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content" />
+        <!-- 产品价格 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="￥58.00"
+            android:textSize="16dp"
+            android:layout_alignTop="@+id/orderlist_product_item_icon"
+            android:layout_alignParentRight="true"
+            android:id="@+id/orderlist_product_item_pice"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <!-- 产品参数 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:id="@+id/orderlist_product_item_parameter"
+            android:layout_marginLeft="16dp"
+            android:layout_above="@+id/orderlist_product_item_share"
+            android:layout_toRightOf="@+id/orderlist_product_item_icon"
+            android:layout_height="wrap_content" />
+        <!-- 产品数量 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/orderlist_product_item_num"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/orderlist_product_item_pice"
+            android:text="X1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="分享有礼"
+            android:id="@+id/orderlist_product_item_share"
+            android:background="@color/red"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignBottom="@+id/orderlist_product_item_icon"
+            android:layout_toRightOf="@+id/orderlist_product_item_icon"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <!-- divider -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"
+        ></View>
+</LinearLayout>

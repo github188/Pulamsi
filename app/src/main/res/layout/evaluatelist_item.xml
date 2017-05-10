@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="2dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingLeft="@dimen/app_main_left_margin"
+        android:paddingRight="@dimen/app_main_right_margin"
+        android:layout_height="wrap_content">
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:id="@+id/evaluate_ratingbar"
+        style="@style/roomRatingBar"
+        android:isIndicator="true"
+        android:rating="3"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/evaluate_username"
+        android:text="admin"
+        android:layout_alignTop="@+id/good_detail_evaluate_ratingbar"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/evaluate_ratingbar"
+        android:layout_marginTop="5dp"
+        android:id="@+id/evaluate_content"
+        android:text="好评!!!!!!!!!!!!!是正品浪费大家阿狸减肥将来奋斗精神啦放假到了撒娇疯了都结束啦警方了解就弗洛大街奋斗啦手机发了的距离撒娇发来的时间啊解放了的撒就对了撒叫犯贱"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/evaluate_content"
+        android:layout_marginTop="2dp"
+        android:text="2013-1-123"
+        android:id="@+id/evaluate_time"
+        android:textSize="12dp"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="2dp"/>
+
+</LinearLayout>

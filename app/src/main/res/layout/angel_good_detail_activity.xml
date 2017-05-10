@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.pulamsi.angelgooddetail.gooddetail.GoodDetailLayoutContainer
+        android:id="@+id/svc_good_detail_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/good_detail_bottom_operation_bar_height">
+
+        <!-- 必须屏蔽 overScroll，避免部分机型定制的 ScrollView （如魅族）造成的滚动效果 bug -->
+        <ScrollView
+            android:id="@+id/sv_good_detail_text_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- 商品参数模块 -->
+                <fragment
+                    android:id="@+id/fragment_good_detail_good_img_banner"
+                    android:name="com.pulamsi.angelgooddetail.gooddetail.GoodDetailGoodParametersFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- 图文详情模块，动态由 Fragment 来填充，必须屏蔽 overScroll，避免部分机型定制的 ScrollView （如魅族）造成的滚动效果 bug  -->
+        <ScrollView
+            android:id="@+id/sv_good_detail_img_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_divider_bg"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+        <!-- 悬浮 TabLayout 模块，位于图文详情模块顶部，但 xml 布局上应该位于图文详情模块之下 -->
+        <RelativeLayout
+            android:id="@+id/rl_good_detail_img_detail_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.pulamsi.angelgooddetail.gooddetail.GoodDetailLayoutContainer>
+
+    <!-- 回顶按钮 -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/iv_good_detail_back_top_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_good_detail_bottom_operation_bar"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_back_top"
+        android:visibility="gone"
+        app:backgroundTint="@color/white"
+        app:fabSize="mini"/>
+
+    <!-- 底部操作栏模块 -->
+    <fragment
+        android:id="@+id/fragment_good_detail_bottom_operation_bar"
+        android:name="com.pulamsi.angelgooddetail.gooddetail.GoodDetailBottomOperationBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

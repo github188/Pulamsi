@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- divider -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+        <!-- 主面板 -->
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+            <!--  基本信息面板 -->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:paddingLeft="@dimen/app_main_left_margin"
+                    android:paddingRight="@dimen/app_main_right_margin"
+                    android:gravity="center_vertical">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            android:id="@+id/tv_shipping_address_management_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/app_font_color_2f"
+                            android:textSize="16dp"
+                            tools:text="瑶瑶"/>
+
+                    <TextView
+                            android:id="@+id/tv_shipping_address_management_phone_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textColor="@color/app_font_color_2f"
+                            android:textSize="16dp"
+                            tools:text="135****2299"/>
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/tv_shipping_address_management_user_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@color/app_font_color_77"
+                        android:textSize="14dp"
+                        tools:text="广东省广州市"/>
+
+            </LinearLayout>
+
+            <!-- divider -->
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/app_main_left_margin"
+                    android:background="@color/app_divider_line_bg_e8"/>
+
+            <!-- 操作面板 -->
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:paddingLeft="12.5dp"
+                    android:paddingRight="14dp"
+                    android:gravity="center_vertical">
+
+                <!-- 设为默认 -->
+                <TextView
+                        android:id="@+id/tv_shipping_address_management_set_to_default_address_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_selected_nor"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/app_font_color_77"
+                        android:textSize="14dp"
+                        android:text="@string/shipping_address_management_set_to_default_address_btn_str"/>
+
+                <!-- 编辑 -->
+                <TextView
+                        android:id="@+id/tv_shipping_address_management_address_edit_str"
+                        android:layout_toLeftOf="@+id/tv_shipping_address_management_address_delete_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="24dp"
+                        android:drawableLeft="@drawable/ic_editor"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/app_font_color_77"
+                        android:textSize="14dp"
+                        android:text="@string/shipping_address_management_set_to_address_edit_btn_str"/>
+
+                <!-- 删除 -->
+                <TextView
+                        android:id="@+id/tv_shipping_address_management_address_delete_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/ic_garbage"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/app_font_color_77"
+                        android:textSize="14dp"
+                        android:text="@string/shipping_address_management_set_to_address_delete_btn_str"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- divider -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+        <!-- divider -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

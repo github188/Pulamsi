@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:pst="http://schemas.android.com/apk/res-auto"
+                xmlns:stick="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <com.pulamsi.views.StickyNavLayout
+        android:id="@+id/id_stick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        stick:isStickNav="false">
+        <!--头部是否出现-->
+        <RelativeLayout
+            android:id="@id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/top_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/app_pulamsi_main_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_img"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/angel_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_horizontal"
+                        android:text="普兰氏美肤达人"
+                        android:textSize="18sp"
+                        />
+
+                    <RatingBar
+                        android:id="@+id/angel_ratingBar"
+                        style="@style/angelRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:stepSize="0.1"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/app_line_bg"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/app_divider_line_bg_cc"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/angel_credit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="正能量 5.0"
+                                    android:textSize="13sp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/angel_credit_compare"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:drawableLeft="@drawable/angel_above"
+                                    android:text="高于行业水平"
+                                    android:textSize="13sp"
+                                    />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/app_line_bg"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/app_divider_line_bg_cc"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/angel_serve"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="天使服务 5.0"
+                                    android:textSize="13sp"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/angel_serve_compare"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:drawableLeft="@drawable/angel_flat"
+                                    android:text="与行业持平"
+
+                                    android:textSize="13sp"
+                                    />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="@dimen/app_line_bg"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/app_divider_line_bg_cc"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/angel_after"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="天使售后 5.0"
+                                    android:textSize="13sp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/angel_after_compare"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:drawableLeft="@drawable/angel_below"
+                                    android:text="低于行业水平"
+                                    android:textSize="13sp"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/app_line_bg"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/app_divider_line_bg_cc"
+                            />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/background"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="天使地址"
+                            />
+
+                        <TextView
+                            android:id="@+id/angel_adress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/angel_address"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="15dp"
+                            android:singleLine="true"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_line_bg"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/app_divider_line_bg_cc"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="个性签名"
+                            />
+
+                        <TextView
+                            android:id="@+id/angel_statement"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/angel_signature"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="15dp"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/background"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/angel_img"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="62dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <com.gxz.PagerSlidingTabStrip
+            android:id="@+id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:textSize="16sp"
+            pst:pstsDividerColor="@color/app_divider_line_bg_cc"
+            pst:pstsIndicatorColor="@color/app_pulamsi_main_color"
+            pst:pstsIndicatorHeight="3dp"
+            pst:pstsScaleZoomMax="0"
+            pst:pstsShouldExpand="true"
+            pst:pstsTextSelectedColor="@color/app_pulamsi_main_color"
+            pst:pstsUnderlineColor="@color/app_divider_line_bg_cc"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.pulamsi.views.StickyNavLayout>
+
+    LoadViewHelper的状态布局
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </RelativeLayout>
+</RelativeLayout>

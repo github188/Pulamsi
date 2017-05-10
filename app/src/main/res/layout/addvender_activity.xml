@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/addvender_titlelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/addvender_errorhint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addvender_titlelayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/errorhint"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/app_btn_main_color"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addvender_errorhint" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape_top"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="售货机序号:" />
+
+                <EditText
+                    android:id="@+id/addvender_edit_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_all"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="售货机编号:" />
+
+                <EditText
+                    android:id="@+id/addvender_edit_sn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_all"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="售货机名称:" />
+
+                <EditText
+                    android:id="@+id/addvender_edit_terminalname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_all"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="机器密码:" />
+
+                <EditText
+                    android:id="@+id/addvender_eidt_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_all"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="售货机型号:" />
+
+                <EditText
+                    android:id="@+id/addvender_edit_sellertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_all"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="服务电话:" />
+
+                <EditText
+                    android:id="@+id/addvender_edit_telnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_all"
+                    android:text="020-66224245"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="售货机地区:" />
+
+                <TextView
+                    android:id="@+id/addvender_edit_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_all"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape_bottom"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="top|center_horizontal"
+                    android:text="详细地址:" />
+
+                <EditText
+                    android:id="@+id/addvender_edit_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_all"
+                    android:gravity="left|top"
+                    android:minLines="2" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addvender_btn_add"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+                android:textSize="@dimen/button_text_size"
+                android:text="添加"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

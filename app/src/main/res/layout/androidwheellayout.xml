@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#a0323232"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/background"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/new_address_select_area_title"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/app_pulamsi_main_color"
+        android:layout_height="@dimen/title_bar_height" />
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="160dp">
+
+        <com.pulamsi.views.androidwheel.WheelView
+            android:layout_width="match_parent"
+            android:id="@+id/android_wheel_province"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.pulamsi.views.androidwheel.WheelView
+            android:layout_width="match_parent"
+            android:id="@+id/android_wheel_city"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.pulamsi.views.androidwheel.WheelView
+            android:layout_width="match_parent"
+            android:id="@+id/android_wheel_district"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/selectpoplayout_left_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_solid_gray"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/alert_dialog_cancel_btn_str"
+            android:textColor="@color/app_pulamsi_main_color"
+            android:textSize="14dp"/>
+
+        <!-- divider -->
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+        <TextView
+            android:id="@+id/selectpoplayout_right_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_solid_gray"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/alert_dialog_confirm_btn_str"
+            android:textColor="@color/app_pulamsi_main_color"
+            android:textSize="14dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

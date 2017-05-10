@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/snap_up_title_vertical_bar"
+            >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="最美"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="天使"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_angel_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="查看更多"
+            android:textColor="@color/app_font_color_99"
+            android:drawableRight="@drawable/ic_go_to_right"
+            android:paddingRight="8dp"
+            android:drawablePadding="-5dp"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+
+    <com.taobao.uikit.feature.view.TRecyclerView
+        android:id="@+id/angle_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="8dp"
+        >
+
+    </com.taobao.uikit.feature.view.TRecyclerView>
+</LinearLayout>

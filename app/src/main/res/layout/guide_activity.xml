@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pulamsi.views.gallery.SliderBanner
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sb_guide_slide_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_divider_bg"
+        app:my_slider_banner_indicator="@+id/dc_guide_banner_indicator"
+        app:my_slider_banner_pager="@+id/vp_guide_banner_pager"
+        app:my_slider_banner_recycle_show="false"
+        app:my_slider_banner_auto_play="false">
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vp_guide_banner_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <com.pulamsi.views.gallery.DotContainer
+            android:id="@+id/dc_guide_banner_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            app:my_dot_unselected_color="@color/app_divider_line_bg_e2"
+            app:my_dot_radius="3dp"
+            app:my_dot_span="22dp"/>
+
+    <TextView
+            android:id="@+id/tv_guide_start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:textSize="18dp"
+            android:background="@drawable/shape_bg_stroke_white_1px_solid_transparent_corner_4px"
+            android:textColor="@color/white"
+            android:text="@string/start_now"
+            android:visibility="visible"/>
+</com.pulamsi.views.gallery.SliderBanner>

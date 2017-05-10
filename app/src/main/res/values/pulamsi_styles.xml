@@ -1,0 +1,205 @@
+<resources>
+
+    <style name="Theme.Pulamsi" parent="AppBaseTheme">
+        <!--在API低于21的时候按下的颜色不会改变，设置颜色-->
+        <item name="android:selectableItemBackground">@drawable/selector_list_holo</item>
+    </style>
+
+
+    <!--BaseTheme主要的Theme-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--自定义Theme中将android:windowBackground置为null，能小幅提升界面的绘制效率-->
+        <item name="android:windowBackground">@null</item>
+        <!--Android 两个界面间快速切换时，会发现有短暂黑屏-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- activity 的切换动画默认是禁止的，在代码中通过 overridePendingTransition 的方式实现切换动画-->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+
+    <!-- theme of welcome activity, full screen -->
+    <style name="Theme.NoTitleFullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@null</item>
+        <!-- 设置没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- activity 的切换动画默认是禁止的，在代码中通过 overridePendingTransition 的方式实现切换动画-->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+    <!-- pulamsi common dialog style -->
+    <style name="Hai.CommonAlertDialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- 透明度 -->
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+
+    <!-- alert dialog show from bottomPos and hide to bottomPos-->
+    <style name="Hai.AlertDialogFromBottom" parent="@style/Hai.CommonAlertDialog">
+        <item name="android:windowAnimationStyle">@style/AlertDialogFromBottomWindowAnimation</item>
+        <!--点击外部是否关闭-->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!-- style of alert dilog showed from bottom -->
+    <style name="AlertDialogFromBottomWindowAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/app_down2up_in</item>
+        <item name="android:windowExitAnimation">@anim/app_up2down_out</item>
+    </style>
+
+
+    <!-- custom tab layout style 1 -->
+    <style name="Hai.CustomTabLayout1" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/app_pulamsi_main_color</item>
+        <item name="tabIndicatorHeight">2.5dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="tabTextAppearance">@style/Hai.CustomTabTextAppearance1</item>
+        <item name="tabSelectedTextColor">@color/app_pulamsi_main_color</item>
+    </style>
+
+    <!-- custom tab layout style 2 -->
+    <style name="Hai.CustomTabLayout2" parent="Hai.CustomTabLayout1">
+        <item name="tabTextAppearance">@style/Hai.CustomTabTextAppearance2</item>
+    </style>
+
+
+    <!-- custom tab text appearance for custom tab layout -->
+    <style name="Hai.CustomTabTextAppearance2" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/app_font_color_6c</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <!-- custom tab text appearance for custom tab layout -->
+    <style name="Hai.CustomTabTextAppearance1" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/app_font_color_77</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_yellow</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+    <!--天使心形图片-->
+    <style name="angelRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_red</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:maxHeight">14dp</item>
+    </style>
+
+
+    <style name="IMTheme.Basic" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="IMTheme.Transparent" parent="@style/IMTheme.Basic">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--SweetDialog-->
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+
+    <!--抢购倒计时-->
+    <style name="RushBuyCountDownTimerViewStyle" parent="SnapUpView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@color/coutDown_white_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RushBuyCountDownTimerViewStyleRed" parent="RushBuyCountDownTimerViewStyle">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+
+    <style name="SnapUpViewColon" parent="SnapUpView">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColor">@color/coutDown_white_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">:</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SnapUpView">
+        <!--//改变控件大小-->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <!--WebView加载进度条-->
+    <style name="GNowProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">8dp</item>
+        <item name="spb_sections_count">2</item>
+        <item name="spb_speed">1.7</item>
+        <item name="spb_progressiveStart_speed">2</item>
+        <item name="spb_progressiveStop_speed">3.4</item>
+        <item name="spb_interpolator">spb_interpolator_acceleratedecelerate</item>
+        <item name="spb_mirror_mode">true</item>
+        <item name="spb_reversed">true</item>
+        <item name="spb_color">@color/app_pulamsi_main_color</item>
+        <item name="spb_progressiveStart_activated">true</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="Search_Dialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置背景模糊的透明度-->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+</resources>

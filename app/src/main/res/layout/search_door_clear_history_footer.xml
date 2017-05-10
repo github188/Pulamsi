@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_garbage_image"
+                android:src="@drawable/ic_garbage"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/search_garbage_text"
+                android:textSize="14dp"
+                android:textColor="@color/app_font_color_2f"
+                android:text="@string/search_door_clear_history_world_record_str"/>
+    </LinearLayout>
+</LinearLayout>

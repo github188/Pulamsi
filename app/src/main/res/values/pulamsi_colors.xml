@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="app_pulamsi_main_color">#00bcb4</color>
+    <color name="app_pulamsi_main_color_home">#00bcb5</color>
+    <color name="main_color">#db0f0c</color>
+    <color name="app_btn_main_color">#e40033</color>
+    <color name="app_btn_main_color_deep">#c3022d</color>
+    <color name="white">#ffffff</color>
+    <color name="white_seach">#77ffffff</color>
+    <color name="black">#000000</color>
+    <color name="pure_white">#fcfbfb</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_bg_black">#88000000</color>
+    <color name="red">#ff0000</color>
+    <color name="red_dot">#FF0033</color>
+    <color name="green">#02ad4a</color>
+
+    <!-- 标题栏返回按钮的背景颜色 -->
+    <drawable name="button_backward_pressed">#40F64C99</drawable>
+    <drawable name="button_backward_normal">#0000</drawable>
+    <color name="app_hai_tao_color">#fc714b</color>
+    <color name="app_hai_deep_tao_color">#eb5d36</color>
+
+    <!-- 程序主色调 -->
+    <color name="background">#f2f2f2</color>
+    <color name="good_item_background">#F7F7F7</color><!--字母越大越接近白色-->
+    <color name="table_background">#cbcbcb</color>
+    <color name="gray">#808080</color>
+    <color name="light_white">#fcfcfc</color>
+    <color name="tab_main_color">#1e1d1d</color>
+    <color name="slotmachine_background">#f9f9f9</color>
+
+
+    <!-- 内容条目按下时的样式 -->
+    <drawable name="pressed_bg">#f2f2f2</drawable>
+    <drawable name="nopressed_bg">#fff</drawable>
+
+    <!-- 警示性按钮的背景颜色 -->
+    <drawable name="button_caution_pressed">#d1337b</drawable>
+    <drawable name="button_caution_normal">#f559b1</drawable>
+
+
+
+    <!-- divider-->
+    <color name="app_divider_bg">#f8f8f8</color>
+    <color name="app_divider_line_bg_e2">#e2e2e2</color>
+    <color name="app_divider_line_bg_e3">#e3e3e3</color>
+    <color name="app_divider_line_bg_e4">#e4e4e4</color>
+    <color name="app_divider_line_bg_e8">#e8e8e8</color>
+    <color name="app_divider_line_bg_f2">#f2f2f2</color>
+    <color name="app_divider_line_bg_e97">#e97395</color>
+    <color name="app_divider_line_bg_de">#dedede</color>
+    <color name="app_divider_line_bg_cc">#cccccc</color>
+
+    <!--font -->
+    <color name="app_font_color_2f">#2f2f2f</color>
+    <color name="app_font_color_c2">#c2c2c2</color>
+    <color name="app_font_color_c2_home">#f2f2f2</color>
+    <color name="app_font_color_56">#565656</color>
+    <color name="app_font_color_a1">#a1a1a1</color>
+    <color name="app_font_color_ff">#ff0000</color>
+    <color name="app_font_color_77">#777777</color>
+    <color name="app_font_color_99">#999999</color>
+    <color name="app_font_color_6c">#6c6c6c</color>
+    <color name="app_font_color_29">#292421</color>
+    <color name="app_font_color_f98623">#f98623</color>
+
+
+    <color name="app_background_eb">#ebebeb</color>
+    <color name="app_background_f4">#f4f4f4</color>
+
+
+    <!-- android_wheel -->
+    <color name="province_line_border">#C7C7C7</color>
+
+
+    <!--Button-->
+    <color name="button_green_bg">#00bcb4</color>
+    <color name="button_green_pressed_bg">#02acb4</color>
+    <!--SweetDialog-->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+    <!--节点进度他-->
+    <color name="nodeColor">#cccccc</color>
+    <color name="nodeTextColor">#00bcb4</color>
+
+    <!--抢购按钮配色-->
+    <color name="snap_up_pressed_bg">#FF6A6A</color>
+    <color name="snap_up_bg">#FF4040</color>
+    <color name="snap_sales_bg">#11000000</color>
+    <!--抢购倒计时颜色-->
+    <color name="coutDown_black_text">#ffffff</color>
+    <color name="coutDown_black_bg">#000000</color>
+
+    <color name="coutDown_white_text">#000000</color>
+    <color name="coutDown_white_bg">#ffffff</color>
+
+</resources>

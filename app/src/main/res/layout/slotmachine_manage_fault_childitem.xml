@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:id="@+id/slotmachine_manage_fault_childitem_image"
+        android:src="@drawable/ic_fault"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_fault_childitem_goodsroadNum"
+            android:text="货道号:1"
+            android:gravity="center_vertical"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_fault_childitem_faultcontent"
+            android:text="故障详情:红外检测异常"
+            android:gravity="center_vertical"
+            android:layout_height="25dp" />
+    </LinearLayout>
+</LinearLayout>

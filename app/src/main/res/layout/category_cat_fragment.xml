@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <!-- 顶级目录列表区域-->
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            <com.taobao.uikit.feature.view.TRecyclerView
+                    android:id="@+id/rv_category_top_cat_list"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"/>
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                    android:id="@+id/pw_category_top_cat_list_progress_wheel"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    app:matProg_barWidth="2dp"
+                    app:matProg_barColor="@color/app_pulamsi_main_color"
+                    app:matProg_progressIndeterminate="true"/>
+        </RelativeLayout>
+
+        <!-- 该顶级目录对应的分类列表区域-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <com.taobao.uikit.feature.view.TRecyclerView
+                    android:id="@+id/rv_category_cat_detail_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="14dp"/>
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                    android:id="@+id/pw_category_cat_list_progress_wheel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    app:matProg_barWidth="2dp"
+                    app:matProg_barColor="@color/app_pulamsi_main_color"
+                    app:matProg_progressIndeterminate="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pulamsi.views.PtrStylelFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slotmachine_list_ptrFrame"
+        android:layout_below="@+id/shoppingcar_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.taobao.uikit.feature.view.TRecyclerView
+                android:id="@+id/slotmachine_list_trecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+            <com.pulamsi.views.BlankLayout
+                android:id="@+id/blank_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+    </com.pulamsi.views.PtrStylelFrameLayout>
+
+</RelativeLayout>

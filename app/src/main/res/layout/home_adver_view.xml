@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="普兰氏"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:background="#ff0000"
+        android:padding="1dp"
+        android:paddingLeft="5dp"
+        android:text="快报"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e0e0e0"
+        />
+
+    <com.pulamsi.views.rollAdverView.RollAdverView
+        android:id="@+id/rav_adverView"
+        app:animDirection="up"
+        app:animDuration="500"
+        app:gap="3000"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>

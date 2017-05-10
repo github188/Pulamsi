@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/integral_detail_list_top_layout"
+        android:visibility="gone"
+        android:layout_height="30dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收入/支出"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="详细说明"/>
+    </LinearLayout>
+
+
+
+    <com.taobao.uikit.feature.view.TRecyclerView
+        android:id="@+id/integral_detail_list_activity_trecyclerview"
+        android:layout_below="@+id/integral_detail_list_top_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/background"
+        ></com.taobao.uikit.feature.view.TRecyclerView>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/integral_detail_list_activity_pw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/app_pulamsi_main_color"
+        app:matProg_progressIndeterminate="true"/>
+
+    <com.pulamsi.views.BlankLayout
+        android:id="@+id/blank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

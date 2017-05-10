@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <!-- 显示区，只可点击，默认显示 -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_bg_solid_app_gray_background_corner_15dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_search"
+                android:id="@+id/search_header_text"
+                android:drawablePadding="2dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/home_search_hint_str"
+                android:textColor="@color/app_font_color_77"
+                android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--锯齿-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/crad_lace"
+    android:tileMode="repeat">
+
+</bitmap>

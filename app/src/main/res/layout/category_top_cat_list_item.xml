@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tv_category_top_cat_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_category_list_item_height"
+            android:singleLine="true"
+            android:background="@drawable/layer_list_bg_stroke_0_0_0_1px_1px_solid_f4"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="@color/app_font_color_2f"
+            android:textSize="13dp"
+            android:text="进口食品"/>
+
+</LinearLayout>

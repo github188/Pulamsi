@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <com.taobao.uikit.feature.view.TRecyclerView
+        android:id="@+id/slotmachine_manage_discount_selectgoods_trecyclerview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:background="@color/background"
+        android:layout_above="@+id/slotmachine_manage_discount_selectgoods_line"
+        android:layout_height="match_parent">
+    </com.taobao.uikit.feature.view.TRecyclerView>
+
+
+    <View
+        android:id="@+id/slotmachine_manage_discount_selectgoods_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/slotmachine_manage_discount_selectgoods_allchecklayout"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+    <RelativeLayout
+        android:id="@+id/slotmachine_manage_discount_selectgoods_allchecklayout"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/slotmachine_manage_discount_selectgoods_checkbox"
+            android:text="全选"
+            android:button="@drawable/checkbox_circle_selector"
+            android:background="@color/white"
+            android:textColor="@color/app_btn_main_color"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/slotmachine_manage_discount_selectgoods_affirm"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_btn_stroke_ff_1px_solid_red_corner_1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_ff_white_color"
+            android:text="确认"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

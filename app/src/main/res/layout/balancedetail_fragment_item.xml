@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/balancedetail_fragment_dealtime"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/balancedetail_fragment_dealsum"
+            android:layout_weight="1"
+            android:textColor="@color/app_font_color_f98623"
+            android:gravity="center"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/balancedetail_fragment_comment"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/balancedetail_fragment_status"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

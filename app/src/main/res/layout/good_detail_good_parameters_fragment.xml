@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+
+    <com.pulamsi.views.gallery.SliderBanner
+        android:id="@+id/good_detail_sbanner"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/app_divider_bg"
+        app:my_slider_banner_indicator="@+id/good_detail_dotcontainer"
+        app:my_slider_banner_pager="@+id/good_detail_pager"
+        app:my_slider_banner_recycle_show="true"
+        app:my_slider_banner_auto_play="false">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/good_detail_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.pulamsi.views.gallery.DotContainer
+            android:id="@+id/good_detail_dotcontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            app:my_dot_unselected_color="@color/app_divider_line_bg_e2"
+            app:my_dot_radius="3dp"
+            app:my_dot_span="22dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/good_detail_gradient_bg"
+            ></View>
+    </com.pulamsi.views.gallery.SliderBanner>
+
+    <!--抢购条目-->
+    <include
+        android:visibility="gone"
+        android:id="@+id/snap_up_bar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        layout="@layout/good_detail_activity_bar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/good_detail_productname"
+            android:text="普兰氏柠檬滋养润手霜"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:textSize="18dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/good_detail_good_parameters_jf"
+            android:layout_toLeftOf="@+id/good_detail_good_parameters_share"
+            android:textColor="@color/green"
+            android:layout_marginRight="5dp"
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_alignLeft="@+id/good_detail_good_parameters_share"
+            android:layout_width="@dimen/app_line_bg"
+            android:layout_height="match_parent"
+            android:background="@color/app_divider_line_bg_cc"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="60dp"
+            android:id="@+id/good_detail_good_parameters_share"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="2dp"
+                android:layout_width="25dp"
+                android:src="@drawable/good_detail_share"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:text="分享"
+                android:textColor="#515151"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_product_price_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="￥58.00"
+            android:id="@+id/good_detail_productprice"
+            android:textColor="@color/red"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="￥58.00"
+            android:id="@+id/good_detail_productMarketPrice"
+            android:layout_marginLeft="@dimen/app_main_left_margin"
+            android:textSize="14dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="分享有礼"
+            android:background="@drawable/bg_snap_up_sales"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/red"
+            android:padding="2dp"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/good_detail_sales"
+                android:text="手机特惠"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/app_font_color_99"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="更多价格"
+            android:gravity="center"
+            android:id="@+id/good_detail_morePrice"
+            android:textColor="@color/lite_blue"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e8"/>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e8"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_font_color_77"
+                android:textSize="14dp"
+                android:text="@string/good_detail_delivery_fee_str"/>
+
+            <TextView
+                android:id="@+id/tv_good_detail_shipping_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_font_color_2f"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:text="全国包邮"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_font_color_77"
+                android:textSize="14dp"
+                android:text="@string/good_detail_slotmachine_str"/>
+
+            <TextView
+                android:id="@+id/good_detail_isAutoSell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_font_color_2f"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:maxLines="2"
+                android:text="支持"
+                android:ellipsize="end"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e2"/>
+
+    <!-- divider -->
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider_line_bg_e8"/>
+
+
+    <!-- 评价 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="@dimen/app_main_left_margin"
+        android:paddingRight="@dimen/app_main_right_margin"
+        android:layout_height="150dp">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:id="@+id/good_detail_evaluate_ratingbar"
+            style="@style/roomRatingBar"
+            android:isIndicator="true"
+            android:rating="3"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/good_detail_evaluate_username"
+            android:layout_alignTop="@+id/good_detail_evaluate_ratingbar"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/good_detail_evaluate_ratingbar"
+            android:layout_marginTop="5dp"
+            android:id="@+id/good_detail_evaluate_content"
+            android:maxLines="3"
+            android:lines="3"
+            android:ellipsize="end"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/good_detail_evaluate_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/good_detail_evaluate_time"
+            android:textSize="12dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/good_detail_evaluate_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_stroke_a1_1px_solid_white_corner_2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="10dp"
+                android:textColor="@color/app_font_color_77"
+                android:text="@string/good_detail_evaluate_all"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="暂无评论"
+            android:id="@+id/evaluate_empty"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <!-- 上拉加载图文详情 -->
+<!--    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:textColor="@color/app_font_color_77"
+        android:textSize="12dp"
+        android:text="@string/good_detail_pull_up_to_load_img_detail_str"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_pulldown"
+        android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_line_bg"
+            android:layout_weight="1"
+            android:background="@color/app_divider_line_bg_cc"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/app_font_color_77"
+            android:textSize="12dp"
+            android:text="@string/good_detail_pull_up_to_load_img_detail_str"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_line_bg"
+            android:layout_weight="1"
+            android:background="@color/app_divider_line_bg_cc"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/pw_slotmachine_manage_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="46dp"
+            app:matProg_barColor="@color/app_pulamsi_main_color"
+            app:matProg_barWidth="2dp"
+            app:matProg_progressIndeterminate="true"/>
+
+        <com.taobao.uikit.feature.view.TRecyclerView
+            android:id="@+id/slotmachine_manage_list_trecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:scrollbars="none"
+            android:visibility="gone">
+        </com.taobao.uikit.feature.view.TRecyclerView>
+
+        <com.pulamsi.views.BlankLayout
+            android:id="@+id/blank_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <com.pulamsi.views.bottomBar.BottomColumnBar
+        android:id="@+id/slotmachine_manage_list_bottom_columnbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+    </com.pulamsi.views.bottomBar.BottomColumnBar>
+
+</LinearLayout>

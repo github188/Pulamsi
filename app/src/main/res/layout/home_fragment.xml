@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_rootview"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.pulamsi.views.PtrStylelFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_home_material_style_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:style="Rentals"
+        android:background="@color/app_divider_bg">
+
+           <com.taobao.uikit.feature.view.TRecyclerView
+               android:id="@+id/home_trecyclerview"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scrollbars="none"
+               android:background="@color/background">
+               </com.taobao.uikit.feature.view.TRecyclerView>
+    </com.pulamsi.views.PtrStylelFrameLayout>
+
+    <include layout="@layout/home_search_header"
+             android:id="@+id/home_search"
+        />
+    <!-- 回顶按钮 -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/iv_home_back_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        app:backgroundTint="@color/white"
+        android:src="@drawable/ic_back_top"
+        android:layout_margin="15dp"
+        app:fabSize="mini"/>
+
+</RelativeLayout>

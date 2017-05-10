@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+    >
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_refund_tab"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        style="@style/Hai.CustomTabLayout1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_line_bg"
+        android:background="@color/app_divider_line_bg_cc"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_refund_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

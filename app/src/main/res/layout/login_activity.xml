@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_divider_bg">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- topPos blank area -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+        <!-- user input area -->
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+            <!-- phone input -->
+            <EditText
+                    android:id="@+id/et_login_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_mobile"
+                    android:drawablePadding="9dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:filterTouchesWhenObscured="true"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp"
+                    android:textColorHint="@color/app_font_color_a1"
+                    android:textColor="@color/app_font_color_2f"
+                    android:hint="@string/login_phone_hint_str"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/app_divider_line_bg_e2"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                <!-- password input -->
+                <EditText
+                        android:id="@+id/et_login_password"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_password"
+                        android:drawablePadding="9dp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="14dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:filterTouchesWhenObscured="true"
+                        android:textCursorDrawable="@null"
+                        android:inputType="textPassword"
+                        android:textSize="16dp"
+                        android:textColorHint="@color/app_font_color_a1"
+                        android:textColor="@color/app_font_color_2f"
+                        android:hint="@string/login_password_hint_str"/>
+
+
+                <ImageView
+                        android:id="@+id/iv_login_pwd_visible_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/ic_display_password_press"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- divider -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divider_line_bg_e2"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+            <!-- login button -->
+            <TextView
+                    android:id="@+id/tv_login_confirm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:text="@string/login_confirm_btn_str"/>
+
+            <!-- 忘记密码 & 手机快捷登录 -->
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <!-- 忘记密码 -->
+                <TextView
+                        android:id="@+id/tv_login_forget_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="14dp"
+                        android:textColor="@color/app_font_color_a1"
+                        android:text="@string/login_forget_password_str"/>
+
+                <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                <!-- 手机快捷登录 -->
+                <TextView
+                        android:id="@+id/tv_login_phone_fast_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="14dp"
+                        android:textColor="@color/app_font_color_a1"
+                        android:text="@string/login_phone_fast_register_str"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 隐私政策 -->
+    <TextView
+            android:id="@+id/tv_login_private_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="14dp"
+            android:textColor="@color/app_font_color_a1"
+            android:text="@string/login_priavcy_policy_str"/>
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_divider_bg"
+        android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/app_divider_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divider_line_bg_e8"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="11.5dp"
+            android:background="@color/app_divider_line_bg_e8"/>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_expiry_date"
+                android:layout_marginLeft="@dimen/app_main_left_margin"
+                android:textColor="@color/app_font_color_77"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="14dp"
+                android:textSize="16dp"
+                android:text="您的订单已提交,请尽快支付!"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/app_divider_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/app_divider_line_bg_e8"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:layout_marginTop="11.5dp"
+              android:background="@color/app_divider_line_bg_e8"/>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/app_font_color_2f"
+                  android:layout_marginLeft="@dimen/app_main_left_margin"
+                  android:textSize="16dp"
+                  android:text="@string/pay_choice_type"/>
+
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="@color/app_divider_line_bg_e2"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:id="@+id/pay_choice_type_alipay_layout"
+                    android:background="@color/white">
+
+        <ImageView android:layout_width="39dp"
+                   android:layout_height="39dp"
+                   android:id="@+id/pay_choice_type_alipay_icon"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/app_main_left_margin"
+                   android:background="@drawable/ic_alipay_icon"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/pay_choice_type_alipay_pay"
+                  android:layout_toRightOf="@+id/pay_choice_type_alipay_icon"
+                  android:layout_alignTop="@+id/pay_choice_type_alipay_icon"
+                  android:layout_marginLeft="9dp"
+                  android:layout_marginTop="3dp"
+                  android:textSize="16dp"
+                  android:textColor="@color/app_font_color_2f"
+                  android:text="@string/pay_alipay"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/pay_choice_type_alipay_setvice"
+                  android:layout_toRightOf="@+id/pay_choice_type_alipay_icon"
+                  android:layout_below="@+id/pay_choice_type_alipay_pay"
+                  android:layout_marginLeft="9dp"
+                  android:layout_marginTop="2dp"
+                  android:textSize="12dp"
+                  android:textColor="@color/app_font_color_77"
+                  android:text="@string/pay_choice_type_alipay_service"/>
+
+        <ImageView android:layout_width="22dp"
+                   android:layout_height="22dp"
+                   android:id="@+id/pay_choice_type_alipay_right_icon"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/app_main_right_margin"
+                   android:background="@drawable/ic_list_more"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:background="@color/app_divider_line_bg_e2" />
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:id="@+id/pay_choice_type_wechat_layout"
+                    android:background="@color/white"
+            >
+
+        <ImageView android:layout_width="39dp"
+                   android:layout_height="39dp"
+                   android:id="@+id/pay_choice_type_wechat_icon"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/app_main_left_margin"
+                   android:background="@drawable/ic_wechat_icon"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/pay_choice_type_wechat_pay"
+                  android:layout_toRightOf="@+id/pay_choice_type_wechat_icon"
+                  android:layout_alignTop="@+id/pay_choice_type_wechat_icon"
+                  android:layout_marginLeft="9dp"
+                  android:layout_marginTop="3dp"
+                  android:textSize="16dp"
+                  android:textColor="@color/app_font_color_2f"
+                  android:text="@string/pay_choice_type_wechat_pay"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/pay_choice_type_wechat_setvice"
+                  android:layout_toRightOf="@+id/pay_choice_type_wechat_icon"
+                  android:layout_below="@+id/pay_choice_type_wechat_pay"
+                  android:layout_marginLeft="9dp"
+                  android:layout_marginTop="2dp"
+                  android:textSize="12dp"
+                  android:textColor="@color/app_font_color_77"
+                  android:text="@string/pay_choice_type_wechat_safety_pay"/>
+
+        <ImageView android:layout_width="22dp"
+                   android:layout_height="22dp"
+                   android:id="@+id/pay_choice_type_wechat_right_icon"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/app_main_right_margin"
+                   android:background="@drawable/ic_list_more"/>
+
+    </RelativeLayout>
+
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="@color/app_divider_line_bg_e2"/>
+</LinearLayout>

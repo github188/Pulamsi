@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款编号:"
+            android:textColor="@color/app_font_color_56"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:id="@+id/tv_refund_serial_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25666565656565"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/app_font_color_77"
+            android:textSize="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_refund_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退款成功"
+            android:layout_margin="2dp"
+            android:textColor="@color/app_font_color_f98623"
+            android:gravity="right"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_line_bg"
+        android:background="@color/app_divider_line_bg_cc"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易类型:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/app_font_color_56"
+                android:textSize="13dp"
+                />
+            <TextView
+                android:id="@+id/tv_refund_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信支付"
+                android:layout_centerVertical="true"
+                android:textColor="@color/app_font_color_77"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式:"
+                android:layout_centerVertical="true"
+                android:textColor="@color/app_font_color_56"
+                android:textSize="13dp"
+                />
+            <TextView
+                android:id="@+id/tv_refund_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15575174825"
+                android:layout_centerVertical="true"
+                android:textColor="@color/app_font_color_77"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款金额:"
+            android:layout_centerVertical="true"
+            android:textColor="@color/app_font_color_77"
+            android:layout_toLeftOf="@+id/tv_refund_amount"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/tv_refund_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6565"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_refund_create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25666565656565"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/app_font_color_77"
+            android:textSize="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_line_bg"
+        android:background="@color/app_divider_line_bg_cc"
+        />
+
+    <TextView
+        android:id="@+id/tv_refund_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_btn_stroke_ff_1px_solid_red_corner_1dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textSize="14dp"
+        android:textColor="@color/text_ff_white_color"
+        android:layout_gravity="right"
+        android:text="退款" />
+
+</LinearLayout>

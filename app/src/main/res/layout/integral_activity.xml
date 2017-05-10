@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/integral_activity_pw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/app_pulamsi_main_color"
+        app:matProg_progressIndeterminate="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:id="@+id/integral_number"
+            android:textColor="@color/app_pulamsi_main_color"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="您的剩余积分"
+            android:textColor="@color/cube_mints_666666"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="积分商城"
+            android:id="@+id/intrgral_integralstore"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="4px"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_divider_line_bg_de"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="积分明细"
+            android:id="@+id/intrgral_integraldetail"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

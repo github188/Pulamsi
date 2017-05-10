@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/traceorder_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="暂无订单信息"
+        android:visibility="gone"
+        android:background="@color/background"
+        android:textColor="@color/app_pulamsi_main_color"
+        android:textSize="20sp" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/traceorder_pw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/app_pulamsi_main_color"
+        app:matProg_progressIndeterminate="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/traceorder_contentlayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="承运公司:" />
+
+                <TextView
+                    android:id="@+id/traceorder_com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物流单号:" />
+
+                <TextView
+                    android:id="@+id/traceorder_codenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:background="@color/background" />
+
+            <com.pulamsi.views.TraceOrderExpandableList
+                android:id="@+id/traceorder_expandlist"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:cacheColorHint="#00000000"
+                android:childDivider="@drawable/list_line"
+                android:divider="@null"
+                android:visibility="gone"
+                android:listSelector="#00000000" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流跟踪"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/app_line_bg"
+                android:background="@color/app_divider_line_bg_cc"
+                android:layout_margin="10dp"
+                />
+
+            <com.pulamsi.views.NodeProgressView.NodeProgressView
+                android:id="@+id/npv_nodeProgressView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:width="2dp"
+                app:nodeRadius="5dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/wallet_activity_pw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/app_pulamsi_main_color"
+        app:matProg_progressIndeterminate="true"/>
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/wallet_number_layout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="0.00"
+            android:textSize="28dp"
+            android:id="@+id/wallet_number"
+            android:textColor="@color/app_btn_main_color"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="可使用余额"
+            android:textColor="@color/cube_mints_666666"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/app_main_left_margin"
+        android:background="@color/app_divider_line_bg_f2"
+        android:text="余额分类"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/wallet_store"
+            android:text="佣金明细"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="4px"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_divider_line_bg_de"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/wallet_slotmachine"
+            android:text="售货机售卖明细"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/wallet_bankcard"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/app_main_left_margin"
+        android:background="@color/app_divider_line_bg_f2"
+        android:text="银行卡"
+        android:drawableRight="@drawable/ic_go_to_right"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/wallet_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_solid_main_color"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:textSize="16dp"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:layout_marginRight="@dimen/app_main_right_margin"
+        android:textColor="@color/white"
+        android:text="@string/my_info_walletrecharge_btn_str"/>
+
+    <TextView
+        android:id="@+id/wallet_withdrawdeposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_btn_stroke_a1_1px_solid_white_corner_2dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="16dp"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:layout_marginRight="@dimen/app_main_right_margin"
+        android:textColor="@color/app_font_color_56"
+        android:text="@string/my_info_walletwithdrawdeposit_btn_str"/>
+
+
+
+
+</LinearLayout>

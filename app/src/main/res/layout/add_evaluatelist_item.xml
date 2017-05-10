@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/app_main_left_margin"
+        android:paddingRight="@dimen/app_main_right_margin"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/addevaluate_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/addevaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/addevaluate_image"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/evaluate_state"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@+id/addevaluate_name"
+            android:gravity="right|top"
+            android:enabled="false"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/load_more"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_down_more"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hint_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/app_main_left_margin"
+        android:paddingRight="@dimen/app_main_right_margin"
+        >
+
+
+        <EditText
+            android:id="@+id/addevaluate_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="left"
+            android:hint="好评!非常好用"
+            android:maxLength="500"
+            android:minLines="5"
+            android:padding="8dp"
+            android:textSize="12dp"
+            />
+
+        <RelativeLayout
+            android:layout_below="@+id/addevaluate_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/addevaluate_ratingbar"
+                android:text="商品评分"
+                android:textSize="16sp"/>
+
+            <RatingBar
+                android:id="@+id/addevaluate_ratingbar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="33dp"
+                android:focusable="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/background"/>
+
+</LinearLayout>

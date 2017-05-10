@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="150dp">
+
+    <ImageView
+            android:id="@+id/iv_blank_layout_img"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            tools:src="@drawable/ic_car_empty"
+            android:layout_marginBottom="19dp"/>
+
+    <TextView
+            android:id="@+id/tv_blank_layout_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="39dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16dp"
+            android:textColor="@color/app_font_color_77"
+            android:text="@string/shopping_car_blanck_message"/>
+
+    <TextView
+            android:id="@+id/tv_black_layout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:background="@drawable/selector_btn_stroke_a1_1px_solid_white_corner_2dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16dp"
+            android:textColor="@color/app_font_color_77"
+            android:text="@string/shopping_car_shopping_btn_str"/>
+
+</LinearLayout>

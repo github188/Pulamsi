@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="售货机商品价格折扣"
+        android:gravity="center_vertical"
+        android:textColor="@color/app_font_color_56"
+        android:layout_marginLeft="@dimen/app_main_left_margin"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/textviewshape_5dpcorners"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/slotmachine_manage_discount_selectslotmachinetext"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="选择售货机" />
+
+            <TextView
+                android:id="@+id/slotmachine_manage_discount_selectslotmachine"
+                android:layout_width="match_parent"
+                android:hint="点击选择售货机"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_toLeftOf="@+id/slotmachine_manage_discount_selectslotmachine_look"
+                android:layout_toRightOf="@+id/slotmachine_manage_discount_selectslotmachinetext"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape_edittext_2dpcorners_maincolor" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/slotmachine_manage_discount_selectslotmachine_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_stroke_a1_1px_solid_white_corner_2dp"
+                android:layout_marginLeft="20dp"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:textSize="14dp"
+                android:textColor="@color/app_font_color_77"
+                android:text="查看"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textviewshape_5dpcorners"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/slotmachine_manage_discount_selectgoodstext"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="选择商品" />
+
+            <TextView
+                android:id="@+id/slotmachine_manage_discount_selectgoods"
+                android:layout_width="match_parent"
+                android:hint="点击选择商品"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/slotmachine_manage_discount_selectgoods_look"
+                android:layout_toRightOf="@+id/slotmachine_manage_discount_selectgoodstext"
+                android:padding="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewshape_edittext_2dpcorners_maincolor" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/slotmachine_manage_discount_selectgoods_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_stroke_a1_1px_solid_white_corner_2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:textSize="14dp"
+                android:textColor="@color/app_font_color_77"
+                android:text="查看"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_discount_way"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textviewshape_5dpcorners"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="打折方式" />
+
+            <TextView
+                android:id="@+id/tv_discount_way"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_centerInParent="true"
+                android:textColor="@color/gray"
+                android:hint="请选择"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_go_to_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textviewshape_5dpcorners"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/slotmachine_manage_discount_price_str"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="值" />
+
+            <EditText
+                android:id="@+id/slotmachine_manage_discount_price"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/slotmachine_manage_discount_price_str"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/app_font_color_56"
+                android:inputType="numberDecimal"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_all" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_discount_suffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/slotmachine_manage_discount_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/selector_btn_solid_main_color_corner_2dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/white"
+        android:text="确定打折"/>
+
+
+</LinearLayout>

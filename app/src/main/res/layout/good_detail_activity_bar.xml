@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rl_snap_bar_root"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_pulamsi_main_color"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/snap_up_panic_buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50.8"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/snap_up_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.5"
+                android:textColor="@color/app_font_color_c2_home"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:id="@+id/snap_up_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/snap_up_sales_detail_bg"
+                android:padding="3dp"
+                android:text="208件已售"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/good_detail_snap_bar"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:paddingLeft="12dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_cout_down_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距开始仅剩"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:layout_marginBottom="3dp"
+                />
+
+            <com.pulamsi.views.SnapUpCountDownTimerView.SnapUpCountDownTimerView
+                android:id="@+id/sudtv_countDownTimerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:viewSize="8"
+                >
+            </com.pulamsi.views.SnapUpCountDownTimerView.SnapUpCountDownTimerView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

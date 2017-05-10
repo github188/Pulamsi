@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pulamsi.views.MaterialRippleLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleColor="@color/app_divider_line_bg_e8"
+        app:mrl_rippleAlpha="1">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:paddingLeft="@dimen/app_main_left_margin">
+        <TextView
+                android:id="@+id/tv_search_door_history_word_item"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16dp"
+                android:textColor="@color/app_font_color_77"/>
+
+        <!-- divider -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_divider_line_bg_e8"/>
+    </RelativeLayout>
+</com.pulamsi.views.MaterialRippleLayout>

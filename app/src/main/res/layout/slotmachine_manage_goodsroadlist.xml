@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/slotmachine_manage_goodsroadlist_top"
+        android:layout_height="30dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_goodsroad_num"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_goodsroad_goodsname"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_goodsroad_goodsnum"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/slotmachine_manage_goodsroad_price"/>
+    </LinearLayout>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/pw_slotmachine_manage_goodsroadlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/slotmachine_manage_goodsroadlist_top"
+        android:layout_marginBottom="46dp"
+        android:layout_gravity="center"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/app_pulamsi_main_color"
+        app:matProg_progressIndeterminate="true"/>
+
+
+    <com.taobao.uikit.feature.view.TRecyclerView
+        android:id="@+id/slotmachine_manage_goodsroadlist_trecyclerview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_below="@+id/slotmachine_manage_goodsroadlist_top"
+        android:layout_above="@+id/slotmachine_manage_goodsroadlist_updatelayout"
+        android:background="@color/background"
+        android:layout_height="wrap_content">
+
+    </com.taobao.uikit.feature.view.TRecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/slotmachine_manage_goodsroadlist_updatelayout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/title_bar_height">
+        <TextView
+            android:id="@+id/slotmachine_manage_goodsroadlist_alipay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_solid_gray"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/slotmachine_manage_goodsroad_alipay"
+            android:textColor="@color/app_pulamsi_main_color"
+            android:textSize="14dp"/>
+
+        <!-- divider -->
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/app_divider_line_bg_e2"/>
+
+        <TextView
+            android:id="@+id/slotmachine_manage_goodsroadlist_weixin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_solid_gray"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/slotmachine_manage_goodsroad_weixin"
+            android:textColor="@color/app_pulamsi_main_color"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <com.pulamsi.views.BlankLayout
+        android:id="@+id/blank_layout"
+        android:visibility="gone"
+        android:layout_above="@+id/slotmachine_manage_goodsroadlist_updatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
